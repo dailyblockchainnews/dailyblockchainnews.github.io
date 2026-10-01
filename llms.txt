@@ -1,0 +1,8 @@
+# Hashbeam
+
+> Hashbeam reports crypto news: protocol upgrades, network security, exchanges, stablecoins, regulation and market structure across blockchains and tokens.
+
+## Key pages
+- [Homepage](https://dailyblockchainnews.github.io/): latest reporting and analysis.
+- [About](https://dailyblockchainnews.github.io/about/): editorial scope, independence, sourcing and corrections.
+- [Archive](https://dailyblockchainnews.github.io/archive/): everything published.
