@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en-GB" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Handle a Stale Crypto Swap Quote | Hashbeam</title>
+<meta name="description" content="A swap quote is a snapshot, not a promise: refresh it, inspect the new minimum output and route, then sign only the transaction you intend to execute.">
+<link rel="canonical" href="https://dailyblockchainnews.github.io/when-a-swap-quote-goes-stale-requote-before-signing/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1817">
+<meta name="author" content="The Hashbeam Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Hashbeam">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="When a Swap Quote Goes Stale, Requote Before Signing">
+<meta property="og:description" content="A swap quote is a snapshot, not a promise: refresh it, inspect the new minimum output and route, then sign only the transaction you intend to execute.">
+<meta property="og:url" content="https://dailyblockchainnews.github.io/when-a-swap-quote-goes-stale-requote-before-signing/">
+<meta property="og:image" content="https://dailyblockchainnews.github.io/assets/covers/when-a-swap-quote-goes-stale-requote-before-signing-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="When a Swap Quote Goes Stale, Requote Before Signing"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="When a Swap Quote Goes Stale, Requote Before Signing">
+<meta name="twitter:description" content="A swap quote is a snapshot, not a promise: refresh it, inspect the new minimum output and route, then sign only the transaction you intend to execute.">
+<meta property="article:published_time" content="2026-10-04T15:48:51+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s9b31fc2faf.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Hashbeam" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyblockchainnews.github.io/#website",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Hashbeam reports crypto news: protocol upgrades, network security, exchanges, stablecoins, regulation and market structure across blockchains and tokens."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyblockchainnews.github.io/when-a-swap-quote-goes-stale-requote-before-signing/#webpage",
+      "url": "https://dailyblockchainnews.github.io/when-a-swap-quote-goes-stale-requote-before-signing/",
+      "name": "How to Handle a Stale Crypto Swap Quote | Hashbeam",
+      "isPartOf": {
+        "@id": "https://dailyblockchainnews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyblockchainnews.github.io/when-a-swap-quote-goes-stale-requote-before-signing/#article",
+      "headline": "When a Swap Quote Goes Stale, Requote Before Signing",
+      "isAccessibleForFree": true,
+      "description": "A swap quote is a snapshot, not a promise: refresh it, inspect the new minimum output and route, then sign only the transaction you intend to execute.",
+      "datePublished": "2026-10-04T15:48:51+00:00",
+      "dateModified": "2026-10-04T15:48:51+00:00",
+      "url": "https://dailyblockchainnews.github.io/when-a-swap-quote-goes-stale-requote-before-signing/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyblockchainnews.github.io/when-a-swap-quote-goes-stale-requote-before-signing/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "wordCount": 836,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/when-a-swap-quote-goes-stale-requote-before-signing-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/when-a-swap-quote-goes-stale-requote-before-signing-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/when-a-swap-quote-goes-stale-requote-before-signing-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyblockchainnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "When a Swap Quote Goes Stale, Requote Before Signing",
+          "item": "https://dailyblockchainnews.github.io/when-a-swap-quote-goes-stale-requote-before-signing/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailyblockchainnews.github.io/#org",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1fb3751" href="#main">Skip to main content</a>
+<header class="s21c5601">
+  <div class="sf4f0dbb s6484681">
+    <a class="s0f7e155" href="/">Hashbeam</a>
+    <p class="sd2d39e8">Crypto protocols, markets and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sf4f0dbb s1522634">
+  <header class="s1b91d5f">
+    <p class="sa3e22fc"><time class="s39232be" datetime="2026-10-04T15:48:51+00:00">2026-10-04 15:48 UTC</time><span class="s6100180">e46c51</span></p>
+    <h1 class="s06f00f2">When a Swap Quote Goes Stale, Requote Before Signing</h1>
+<p class="s32df8ee">A swap quote is a snapshot, not a promise: refresh it, inspect the new minimum output and route, then sign only the transaction you intend to execute.</p>    <p class="sc82b695"><span>The Hashbeam Desk</span><span class="s9d2a29e">·</span><time datetime="2026-10-04T15:48:51+00:00">Oct 4, 2026</time><span class="s9d2a29e">·</span><span class="s15340cb">5 min read</span></p>
+  </header>
+  <figure class="sd0e714b"><img fetchpriority="high" class="sb855dc0" src="/assets/covers/when-a-swap-quote-goes-stale-requote-before-signing.jpg" alt="Abstract cover artwork for When a Swap Quote Goes Stale, Requote Before Signing"></figure>
+  <div class="s48eadf1"><p>When a swap quote goes stale, request a fresh quote and review its execution limits before signing. A quote estimates what a route can return from the state the router observed; it does not reserve liquidity or lock a price. Pool reserves can change while you compare quotes, approve a token, or wait for a transaction to be included. For a fuller account of the wallet-to-execution flow, see <a href="https://sam-robeson.mataroa.blog/blog/fermi-swap-explained-wallet-trades-and-execution/" rel="noopener">fermi swap</a>; the key point here is that the displayed estimate and the signed transaction’s limits do different jobs.</p>
+
+<p>Start by distinguishing the quote from the transaction. A quote service may simulate a route against recent chain state and return an estimated output, route, gas estimate, and suggested slippage bound. The wallet then builds or receives a transaction that calls a router or another execution contract. Between those steps, another trade can move a pool price, liquidity can change, or the transaction can wait in the mempool. A recent quote can still execute differently; an old quote is a reason to refresh, not proof that a trade is unsafe or impossible.</p>
+
+<h2>What does a stale quote change?</h2>
+
+<p>A stale quote can make the expected output inaccurate, but whether the trade can execute depends on the signed transaction’s constraints. In an exact-input AMM swap, the input amount is fixed and the transaction typically sets an <code>amountOutMinimum</code>: the least output the router may accept. In the Uniswap V2 Router’s exact-input methods, execution reverts if the output falls below that minimum. For an exact-output swap, the corresponding protection is an <code>amountInMax</code>, which caps what the router may spend to obtain the requested output.</p>
+
+<p>Those bounds turn price movement into a clear trade-off. If the market moves within the allowed range, execution can proceed with a worse result than the estimate, but not beyond the transaction’s limit. If it moves past the bound, the transaction reverts rather than settling outside that limit. A revert does not complete the swap, but an included failed transaction can still consume gas. The quote’s headline output is therefore not the protection: the encoded minimum output or maximum input is.</p>
+
+<p>Not every swap uses the same contract path. An aggregator may choose among pools or route through multiple pools; an RFQ or solver-based order may use a signed offer with its own expiry and fill rules. Check the route and the execution details presented by the wallet. Do not assume that an AMM router’s <code>amountOutMinimum</code> or deadline applies to every order type.</p>
+
+<h2>What should you check before signing?</h2>
+
+<p>Request a new quote if the displayed one has aged during review, or if the wallet warns that the price or route changed. Then compare the new quote with the transaction the wallet is asking you to sign. Focus on the limits and destination, not only the estimated output. A changed route can mean different contracts or calldata even when the token pair looks identical.</p>
+
+<ul>
+<li>Confirm the network, input token, output token, recipient, and exact input or output amount.</li>
+<li>Read the updated minimum output or maximum input and decide whether that bound is acceptable.</li>
+<li>Check whether the route, fees, price impact, or estimated gas changed since the previous quote.</li>
+<li>Inspect the spender for any token approval and the destination contract for the swap; an approval authorizes token spending, while the swap call executes the trade.</li>
+</ul>
+
+<p>If the refreshed quote crosses your own price limit, cancel the flow and wait or change the trade size. Do not widen slippage merely to make a failing quote pass: a wider bound increases the range of outcomes the transaction can accept. A large price impact can also come from the trade’s size relative to available liquidity, so refreshing alone may not improve the quote; reducing the size can change the route and output.</p>
+
+<h2>What does the transaction deadline protect?</h2>
+
+<p>A deadline limits how long a router transaction remains valid for execution; it does not keep its quoted price fixed. In router methods that accept a deadline, the contract checks the supplied timestamp during execution and reverts if the deadline has passed. If the price moves before that time, the minimum-output or maximum-input check still decides whether the swap can settle. The deadline addresses delay; the slippage bound addresses price movement.</p>
+
+<p>A short deadline can cause a transaction delayed by network congestion to revert after it reaches a block, costing gas. A long deadline gives a pending transaction more time to execute under changed market conditions, though the output bound still limits an AMM swap when properly set. If your wallet shows a pending transaction, check its status before submitting another trade: the original may still execute while pending, and a second submission can create a separate trade or compete for the same account nonce.</p>
+
+<p>The practical rule is simple: refresh after a meaningful delay or a changed route, inspect the transaction’s actual limits, and sign only if those limits still match your intent. A quote is useful for comparing routes; the calldata’s execution checks determine what the contract will accept.</p></div>
+  <aside class="sf223b94">
+    <h2 class="s8079352">More stories</h2>
+    <ul class="sd5197b2">
+<li><a href="/why-volatile-pool-swings-build-impermanent-loss/">Why Volatile Pool Swings Build Impermanent Loss</a></li><li><a href="/blast-will-wind-down-its-ethereum-layer-2-after-costs-top-revenue/">Blast will wind down its Ethereum layer 2 after costs top revenue</a></li><li><a href="/polygons-pol-exit-claim-rests-on-three-address-bindings/">Polygon’s POL exit claim rests on three address bindings</a></li><li><a href="/how-smart-wallets-exit-rollups-step-by-step/">How Smart Wallets Exit Rollups, Step by Step</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sb1812bb">
+  <div class="sf4f0dbb s839b679">
+    <p class="s188d99f">Hashbeam</p>
+    <ul class="sa7f5db7">
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li>    </ul>
+    <p class="s9ce7863">Editorially independent. This is not financial advice.</p>
+    <p class="s2ef56c5">© 2026 Hashbeam</p>
+  </div>
+</footer>
+</body>
+</html>
