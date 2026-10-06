@@ -689,6 +689,8 @@ html, body{max-width:100%; overflow-x:hidden}
 
 main img, main svg, main video, main iframe, main table{max-width:100% !important}
 
+:where(main img[width][height]){height:auto}
+
 main > :not(.sf4f0dbb):not(:has(.sf4f0dbb)){padding-inline:clamp(1rem, 4vw, 2.4rem); box-sizing:border-box}
 
 body > header > :not(.sf4f0dbb):not(:has(.sf4f0dbb)), body > footer > :not(.sf4f0dbb):not(:has(.sf4f0dbb)){padding-inline:clamp(1rem, 4vw, 2.4rem); box-sizing:border-box}
