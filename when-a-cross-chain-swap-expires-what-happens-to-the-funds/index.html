@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en-GB" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-Chain Swap Expiration and Refunds Explained | Hashbeam</title>
+<meta name="description" content="A swap deadline changes which settlement and refund actions remain valid; it does not itself move tokens, and the refund path depends on the protocol’s contract.">
+<link rel="canonical" href="https://dailyblockchainnews.github.io/when-a-cross-chain-swap-expires-what-happens-to-the-funds/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1817">
+<meta name="author" content="The Hashbeam Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Hashbeam">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="When a Cross-Chain Swap Expires, What Happens to the Funds?">
+<meta property="og:description" content="A swap deadline changes which settlement and refund actions remain valid; it does not itself move tokens, and the refund path depends on the protocol’s contract.">
+<meta property="og:url" content="https://dailyblockchainnews.github.io/when-a-cross-chain-swap-expires-what-happens-to-the-funds/">
+<meta property="og:image" content="https://dailyblockchainnews.github.io/assets/covers/when-a-cross-chain-swap-expires-what-happens-to-the-funds-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="When a Cross-Chain Swap Expires, What Happens to the Funds?"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="When a Cross-Chain Swap Expires, What Happens to the Funds?">
+<meta name="twitter:description" content="A swap deadline changes which settlement and refund actions remain valid; it does not itself move tokens, and the refund path depends on the protocol’s contract.">
+<meta property="article:published_time" content="2026-10-15T22:12:11+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s9b31fc2faf.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Hashbeam" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyblockchainnews.github.io/#website",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Hashbeam reports crypto news: protocol upgrades, network security, exchanges, stablecoins, regulation and market structure across blockchains and tokens."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyblockchainnews.github.io/when-a-cross-chain-swap-expires-what-happens-to-the-funds/#webpage",
+      "url": "https://dailyblockchainnews.github.io/when-a-cross-chain-swap-expires-what-happens-to-the-funds/",
+      "name": "Cross-Chain Swap Expiration and Refunds Explained | Hashbeam",
+      "isPartOf": {
+        "@id": "https://dailyblockchainnews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyblockchainnews.github.io/when-a-cross-chain-swap-expires-what-happens-to-the-funds/#article",
+      "headline": "When a Cross-Chain Swap Expires, What Happens to the Funds?",
+      "isAccessibleForFree": true,
+      "description": "A swap deadline changes which settlement and refund actions remain valid; it does not itself move tokens, and the refund path depends on the protocol’s contract.",
+      "datePublished": "2026-10-15T22:12:11+00:00",
+      "dateModified": "2026-10-15T22:12:11+00:00",
+      "url": "https://dailyblockchainnews.github.io/when-a-cross-chain-swap-expires-what-happens-to-the-funds/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyblockchainnews.github.io/when-a-cross-chain-swap-expires-what-happens-to-the-funds/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "wordCount": 924,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/when-a-cross-chain-swap-expires-what-happens-to-the-funds-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/when-a-cross-chain-swap-expires-what-happens-to-the-funds-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/when-a-cross-chain-swap-expires-what-happens-to-the-funds-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyblockchainnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "When a Cross-Chain Swap Expires, What Happens to the Funds?",
+          "item": "https://dailyblockchainnews.github.io/when-a-cross-chain-swap-expires-what-happens-to-the-funds/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailyblockchainnews.github.io/#org",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyblockchainnews.github.io/how-we-report/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1fb3751" href="#main">Skip to main content</a>
+<header class="s21c5601">
+  <div class="sf4f0dbb s6484681">
+    <a class="s0f7e155" href="/">Hashbeam</a>
+    <p class="sd2d39e8">Crypto protocols, markets and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sf4f0dbb s1522634">
+  <header class="s1b91d5f">
+    <p class="sa3e22fc"><time class="s39232be" datetime="2026-10-15T22:12:11+00:00">2026-10-15 22:12 UTC</time><span class="s6100180">fcd150</span></p>
+    <h1 class="s06f00f2">When a Cross-Chain Swap Expires, What Happens to the Funds?</h1>
+<p class="s32df8ee">A swap deadline changes which settlement and refund actions remain valid; it does not itself move tokens, and the refund path depends on the protocol’s contract.</p>    <p class="sc82b695"><span>The Hashbeam Desk</span><span class="s9d2a29e">·</span><time datetime="2026-10-15T22:12:11+00:00">Oct 15, 2026 · 22:12 UTC</time><span class="s9d2a29e">·</span><span class="s15340cb">5 min read</span></p>
+  </header>
+  <figure class="sd0e714b"><img width="1200" height="630" fetchpriority="high" class="sb855dc0" src="/assets/covers/when-a-cross-chain-swap-expires-what-happens-to-the-funds.jpg" alt="When a Cross-Chain Swap Expires, What Happens to the Funds?"></figure>
+  <div class="s48eadf1"><p>When a cross-chain swap expires, the protocol’s deadline may stop a claim or make a refund available, but it does not move tokens by itself. The result depends on what the route locked on-chain and which contract or program enforces the timeout. A wallet showing “expired” can also mean only that a quote or transaction request is stale; the funds may still be locked, or the source transaction may never have been submitted.</p>
+
+<p>That distinction matters because there is no single cross-chain swap expiration mechanism. In a hash time-locked contract (HTLC), a time condition governs when the locked asset can be reclaimed. In an intent-based route, an order deadline can end the opportunity to fill, while a separate protocol action handles the source-chain refund. The <a href="https://web3newsnetwork.github.io/mayan-bridge-what-happens-in-a-cross-chain-swap/" rel="noopener">mayan bridge</a> explainer covers the route’s stages in more detail; the key point here is that expiry changes the permitted next step, not the ledger state by itself.</p>
+
+<h2>What does the expiration deadline actually control?</h2>
+
+<p>The deadline controls whether a specified contract action remains valid; its meaning is protocol-specific. An HTLC combines a hashlock with a timelock. The hashlock allows the counterparty to claim funds by providing the secret whose hash was committed to the contract. The timelock gives the funder a refund path after its condition passes. On Bitcoin, a script can enforce a time-based spend condition with <code>OP_CHECKLOCKTIMEVERIFY</code>; on EVM chains, a contract can compare the current block timestamp or block number with a stored deadline.</p>
+
+<p>In a two-leg HTLC swap, each chain has its own contract and timeout. The intervals are staggered: the leg the initiator claims first must expire later, leaving the counterparty time to use the revealed secret on the other chain. If the first claim never happens, each party waits for the relevant refund condition and submits a refund transaction on its chain. The contracts do not coordinate a global rollback. Each chain independently accepts a valid claim or refund under its own rules.</p>
+
+<p>Other routes use a deadline differently. Mayan Swift is an intent-based auction route: a user creates an order, and a solver can fulfill it on the destination chain. The quote’s deadline limits the period for the order to be fulfilled. Mayan’s published flow describes a source-chain refund when no solver starts the auction before that deadline. This is not the same mechanism as two parties revealing an HTLC secret, and the order deadline should not be treated as a universal timeout for every route.</p>
+
+<h2>Does expiration automatically return the tokens?</h2>
+
+<p>No; expiration usually makes a refund possible, while a transaction or protocol message must still execute the refund path. Smart contracts run when called, and a Solana program runs when an instruction is submitted. If the source asset is held in an escrow contract or program, the refund function must verify that the order is eligible, has not already been completed, and has not already been refunded. It then transfers the asset to the refund address recorded for that order.</p>
+
+<p>Who submits that action varies. Some systems let the user call the refund function directly; others rely on a relayer or a protocol message to trigger the source-chain refund. In Mayan Swift, the documented user flow exposes a <code>REFUNDED</code> status once the funds have returned on the source chain. That status is stronger evidence than a timer reaching zero: it records a refund outcome rather than mere eligibility.</p>
+
+<p>Three states are useful to keep separate:</p>
+
+<ul>
+<li><strong>Quote expired:</strong> the terms may no longer be executable. No funds moved if the source transaction was never confirmed.</li>
+<li><strong>Order deadline passed:</strong> a fill may no longer be valid, and the protocol’s refund conditions may now be met.</li>
+<li><strong>Refund confirmed:</strong> the source-chain transaction returned funds to the recorded refund address.</li>
+</ul>
+
+<p>A user-facing timer can blur these states. A countdown reaching zero is not proof that a refund transaction has been included, and an interface or indexer can lag behind the chain. Check the source-chain transaction and the order’s on-chain status before treating the transfer as complete.</p>
+
+<h2>What can delay or prevent a refund?</h2>
+
+<p>A valid refund path can still take time because eligibility and execution are separate events. The source chain must produce a block or slot that satisfies the protocol’s condition; then someone must submit the refund call, pay any required network fee, and wait for confirmation. If the protocol requires a cross-chain message, that message also has to be observed and accepted before the source contract can act.</p>
+
+<p>There are several edge cases. A destination fill may have completed just before the deadline while its status has not yet reached the tracker. A refund attempt can fail if the order is already fulfilled, the proof or message is invalid, or the transaction uses the wrong chain or contract. Refunds can also return less than the original input if the route deducts a disclosed fee or a source-chain transaction fee. A timeout does not guarantee a refund of unrelated costs, such as gas already spent on a failed transaction.</p>
+
+<p>For a pending swap, first establish whether the source transaction confirmed. If it did, identify the route type and inspect its order or escrow status; then use that protocol’s documented refund path once its conditions are met. Keep the transaction hash, order identifier, and refund address available. If the source transaction never confirmed, there is no on-chain swap escrow to refund. Expiration is therefore best understood as a state transition boundary: it closes one route to settlement and may open another, but the chain records a refund only when that second action succeeds.</p></div>
+  <aside class="sf223b94">
+    <h2 class="s8079352">More stories</h2>
+    <ul class="sd5197b2">
+<li><a href="/why-cross-chain-network-fees-change-before-you-submit/">Why Cross-Chain Network Fees Change Before You Submit</a></li><li><a href="/reserve-destination-gas-before-a-treasury-bridge/">Reserve Destination Gas Before a Treasury Bridge</a></li><li><a href="/how-to-choose-a-safe-test-amount-for-a-cross-chain-swap/">How to Choose a Safe Test Amount for a Cross-Chain Swap</a></li><li><a href="/federated-hermes-plans-tokenized-fund-shares-with-prometheum/">Federated Hermes plans tokenized fund shares with Prometheum</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sb1812bb">
+  <div class="sf4f0dbb s839b679">
+    <p class="s188d99f">Hashbeam</p>
+    <ul class="sa7f5db7">
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/how-we-report/">How we report</a></li>    </ul>
+    <p class="s9ce7863">News and analysis for information, not financial advice.</p>
+    <p class="s2ef56c5">© 2026 Hashbeam</p>
+  </div>
+</footer>
+</body>
+</html>
