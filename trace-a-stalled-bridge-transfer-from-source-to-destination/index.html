@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en-GB" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Check a Stalled Crypto Bridge Transfer | Hashbeam</title>
+<meta name="description" content="A stalled bridge transfer is a state to diagnose, not a single failure: trace the source transaction, identify the route’s handoff, then check destination execution.">
+<link rel="canonical" href="https://dailyblockchainnews.github.io/trace-a-stalled-bridge-transfer-from-source-to-destination/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1817">
+<meta name="author" content="The Hashbeam Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Hashbeam">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Trace a Stalled Bridge Transfer from Source to Destination">
+<meta property="og:description" content="A stalled bridge transfer is a state to diagnose, not a single failure: trace the source transaction, identify the route’s handoff, then check destination execution.">
+<meta property="og:url" content="https://dailyblockchainnews.github.io/trace-a-stalled-bridge-transfer-from-source-to-destination/">
+<meta property="og:image" content="https://dailyblockchainnews.github.io/assets/covers/trace-a-stalled-bridge-transfer-from-source-to-destination-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Trace a Stalled Bridge Transfer from Source to Destination"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Trace a Stalled Bridge Transfer from Source to Destination">
+<meta name="twitter:description" content="A stalled bridge transfer is a state to diagnose, not a single failure: trace the source transaction, identify the route’s handoff, then check destination execution.">
+<meta property="article:published_time" content="2026-10-16T15:50:53+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s9b31fc2faf.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Hashbeam" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyblockchainnews.github.io/#website",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Hashbeam reports crypto news: protocol upgrades, network security, exchanges, stablecoins, regulation and market structure across blockchains and tokens."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyblockchainnews.github.io/trace-a-stalled-bridge-transfer-from-source-to-destination/#webpage",
+      "url": "https://dailyblockchainnews.github.io/trace-a-stalled-bridge-transfer-from-source-to-destination/",
+      "name": "How to Check a Stalled Crypto Bridge Transfer | Hashbeam",
+      "isPartOf": {
+        "@id": "https://dailyblockchainnews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyblockchainnews.github.io/trace-a-stalled-bridge-transfer-from-source-to-destination/#article",
+      "headline": "Trace a Stalled Bridge Transfer from Source to Destination",
+      "isAccessibleForFree": true,
+      "description": "A stalled bridge transfer is a state to diagnose, not a single failure: trace the source transaction, identify the route’s handoff, then check destination execution.",
+      "datePublished": "2026-10-16T15:50:53+00:00",
+      "dateModified": "2026-10-16T15:50:53+00:00",
+      "url": "https://dailyblockchainnews.github.io/trace-a-stalled-bridge-transfer-from-source-to-destination/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyblockchainnews.github.io/trace-a-stalled-bridge-transfer-from-source-to-destination/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "wordCount": 809,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/trace-a-stalled-bridge-transfer-from-source-to-destination-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/trace-a-stalled-bridge-transfer-from-source-to-destination-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/trace-a-stalled-bridge-transfer-from-source-to-destination-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyblockchainnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Trace a Stalled Bridge Transfer from Source to Destination",
+          "item": "https://dailyblockchainnews.github.io/trace-a-stalled-bridge-transfer-from-source-to-destination/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailyblockchainnews.github.io/#org",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyblockchainnews.github.io/how-we-report/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1fb3751" href="#main">Skip to main content</a>
+<header class="s21c5601">
+  <div class="sf4f0dbb s6484681">
+    <a class="s0f7e155" href="/">Hashbeam</a>
+    <p class="sd2d39e8">Crypto protocols, markets and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sf4f0dbb s1522634">
+  <header class="s1b91d5f">
+    <p class="sa3e22fc"><time class="s39232be" datetime="2026-10-16T15:50:53+00:00">2026-10-16 15:50 UTC</time><span class="s6100180">da9f53</span></p>
+    <h1 class="s06f00f2">Trace a Stalled Bridge Transfer from Source to Destination</h1>
+<p class="s32df8ee">A stalled bridge transfer is a state to diagnose, not a single failure: trace the source transaction, identify the route’s handoff, then check destination execution.</p>    <p class="sc82b695"><span>The Hashbeam Desk</span><span class="s9d2a29e">·</span><time datetime="2026-10-16T15:50:53+00:00">Oct 16, 2026 · 15:50 UTC</time><span class="s9d2a29e">·</span><span class="s15340cb">5 min read</span></p>
+  </header>
+  <figure class="sd0e714b"><img width="1200" height="630" fetchpriority="high" class="sb855dc0" src="/assets/covers/trace-a-stalled-bridge-transfer-from-source-to-destination.jpg" alt="Trace a Stalled Bridge Transfer from Source to Destination"></figure>
+  <div class="s48eadf1"><p>To check a stalled bridge transfer, trace its source transaction to finality, then verify whether the bridge’s destination-side action was submitted and completed. A bridge moves value through a sequence of events across separate chains; a “pending” label in the interface can describe any gap in that sequence. Start with the transaction hash and the exact route, not the wallet’s balance display.</p>
+
+<h2>How do I tell whether the source transaction went through?</h2>
+
+<p>Open the source-chain explorer and search the transaction hash shown by the bridge or wallet. Check its execution status, block inclusion, sender, destination contract, token and amount. A transaction that is pending in the wallet has not been included yet; one that reverted was included but its state changes were rolled back. Neither has completed the bridge transfer.</p>
+
+<p>If the source transaction succeeded, inspect its logs or events. For an EVM transaction, the receipt and emitted contract events can show whether the expected bridge contract accepted the deposit or message. A successful receipt alone does not prove the intended transfer happened: a transaction can call a different contract, transfer a different asset, or succeed without producing the bridge event the route expects. Match the event and parameters to the route details.</p>
+
+<p>Then distinguish inclusion from the bridge’s required source-chain finality. A bridge may wait for a configured number of confirmations or another chain-specific finality condition before acting. During that interval, the source transaction can look successful while the destination action has not started. The route’s own status page or transfer history is useful for locating that handoff; a <a href="https://siobhanaern195627.blog-eye.com/43436533/moving-crypto-across-chains-manta-bridge-explained" rel="noopener">manta bridge</a> walkthrough covers one route in more detail. Treat the interface as an index to evidence, and confirm important status against the relevant chain explorer.</p>
+
+<h2>Why can a confirmed transfer still be missing on the destination?</h2>
+
+<p>Because “confirmed on the source” and “executed on the destination” are separate states. A bridge must relay or prove information from one chain to the other, then cause the destination contract or account system to release, mint, or otherwise deliver the asset. The mechanism varies by route: a liquidity bridge may fill an order from destination liquidity, while a canonical layer-2 bridge may process a message through its own contracts.</p>
+
+<p>Use the source event to identify the recipient address, destination chain, asset and amount. Search that address on the destination explorer, including the token’s contract or asset identifier rather than only its ticker. A token can be present under a different contract than the one your wallet displays, and the destination balance view may not include it automatically.</p>
+
+<p>If there is a destination transaction hash, inspect its receipt. A successful destination transaction indicates that execution completed on-chain, though you should still verify the recipient and token transfer event. A reverted destination transaction is different from a transfer that was never submitted: the route may support a retry, or it may require a route-specific recovery step. Do not submit another transfer just because the balance has not changed; the first transfer may still be in flight.</p>
+
+<h2>What should I do when the bridge has not completed the handoff?</h2>
+
+<p>Use the evidence to identify the state and the next permitted action. Record the source hash, route, source and destination networks, token, recipient and any destination hash. Then check the bridge’s transfer history or official status information for the same record. A missing destination transaction points to an uncompleted handoff; a failed destination transaction points to execution trouble; a successful destination transaction with no visible balance points to an asset or wallet-display issue.</p>
+
+<ul>
+<li><strong>Source pending:</strong> wait for inclusion or check whether the transaction was replaced, dropped or rejected by the source network.</li>
+<li><strong>Source reverted:</strong> verify the receipt and error details; only retry after confirming the first attempt did not execute.</li>
+<li><strong>Source final, no destination hash:</strong> check the bridge’s documented processing state and support channel for that exact transfer record.</li>
+<li><strong>Destination failed or completed:</strong> follow the route’s retry or claim instructions if available, or add the correct asset to the wallet after verifying its contract address from a trusted source.</li>
+</ul>
+
+<p>Some withdrawals from rollups have an explicit proof and finalization sequence. In those routes, a source-side withdrawal event can be valid while funds remain unavailable until the proof is accepted and a separate finalization transaction executes. The required wait and steps depend on the bridge’s design, so use its current route-specific instructions rather than assuming every transfer settles in the same way.</p>
+
+<p>Take care with recovery. Never share a seed phrase or private key, and do not sign an unfamiliar “unlock” transaction sent by unsolicited support. If the route provides a retry or claim action, verify that it belongs to the bridge you used and that the transaction’s destination and calldata match the documented operation. The practical rule is simple: locate the last confirmed on-chain event, then act only on the next step that route specifies.</p></div>
+  <aside class="sf223b94">
+    <h2 class="s8079352">More stories</h2>
+    <ul class="sd5197b2">
+<li><a href="/bitcoin-to-chain-swaps-routes-timing-and-fees/">Bitcoin-to-Chain Swaps: Routes, Timing and Fees</a></li><li><a href="/when-should-treasury-intervene-in-a-cross-chain-transfer/">When Should Treasury Intervene in a Cross-Chain Transfer?</a></li><li><a href="/cross-chain-swap-timing-depends-on-finality-and-execution/">Cross-Chain Swap Timing Depends on Finality and Execution</a></li><li><a href="/read-the-vaults-asset-before-you-swap/">Read the Vault’s Asset Before You Swap</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sb1812bb">
+  <div class="sf4f0dbb s839b679">
+    <p class="s188d99f">Hashbeam</p>
+    <ul class="sa7f5db7">
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/how-we-report/">How we report</a></li>    </ul>
+    <p class="s9ce7863">News and analysis for information, not financial advice.</p>
+    <p class="s2ef56c5">© 2026 Hashbeam</p>
+  </div>
+</footer>
+</body>
+</html>
