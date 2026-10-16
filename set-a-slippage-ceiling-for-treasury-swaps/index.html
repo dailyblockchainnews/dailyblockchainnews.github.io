@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en-GB" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Set a Treasury Swap Slippage Ceiling | Hashbeam</title>
+<meta name="description" content="Set a treasury swap ceiling by translating the maximum acceptable execution loss into a minimum output, then checking the route, fees and failure behavior.">
+<link rel="canonical" href="https://dailyblockchainnews.github.io/set-a-slippage-ceiling-for-treasury-swaps/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1817">
+<meta name="author" content="The Hashbeam Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Hashbeam">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Set a Slippage Ceiling for Treasury Swaps">
+<meta property="og:description" content="Set a treasury swap ceiling by translating the maximum acceptable execution loss into a minimum output, then checking the route, fees and failure behavior.">
+<meta property="og:url" content="https://dailyblockchainnews.github.io/set-a-slippage-ceiling-for-treasury-swaps/">
+<meta property="og:image" content="https://dailyblockchainnews.github.io/assets/covers/set-a-slippage-ceiling-for-treasury-swaps-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Set a Slippage Ceiling for Treasury Swaps"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Set a Slippage Ceiling for Treasury Swaps">
+<meta name="twitter:description" content="Set a treasury swap ceiling by translating the maximum acceptable execution loss into a minimum output, then checking the route, fees and failure behavior.">
+<meta property="article:published_time" content="2026-10-16T00:09:32+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s9b31fc2faf.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Hashbeam" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyblockchainnews.github.io/#website",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Hashbeam reports crypto news: protocol upgrades, network security, exchanges, stablecoins, regulation and market structure across blockchains and tokens."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyblockchainnews.github.io/set-a-slippage-ceiling-for-treasury-swaps/#webpage",
+      "url": "https://dailyblockchainnews.github.io/set-a-slippage-ceiling-for-treasury-swaps/",
+      "name": "How to Set a Treasury Swap Slippage Ceiling | Hashbeam",
+      "isPartOf": {
+        "@id": "https://dailyblockchainnews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyblockchainnews.github.io/set-a-slippage-ceiling-for-treasury-swaps/#article",
+      "headline": "Set a Slippage Ceiling for Treasury Swaps",
+      "isAccessibleForFree": true,
+      "description": "Set a treasury swap ceiling by translating the maximum acceptable execution loss into a minimum output, then checking the route, fees and failure behavior.",
+      "datePublished": "2026-10-16T00:09:32+00:00",
+      "dateModified": "2026-10-16T00:09:32+00:00",
+      "url": "https://dailyblockchainnews.github.io/set-a-slippage-ceiling-for-treasury-swaps/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyblockchainnews.github.io/set-a-slippage-ceiling-for-treasury-swaps/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "wordCount": 792,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/set-a-slippage-ceiling-for-treasury-swaps-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/set-a-slippage-ceiling-for-treasury-swaps-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/set-a-slippage-ceiling-for-treasury-swaps-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyblockchainnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Set a Slippage Ceiling for Treasury Swaps",
+          "item": "https://dailyblockchainnews.github.io/set-a-slippage-ceiling-for-treasury-swaps/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailyblockchainnews.github.io/#org",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyblockchainnews.github.io/how-we-report/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1fb3751" href="#main">Skip to main content</a>
+<header class="s21c5601">
+  <div class="sf4f0dbb s6484681">
+    <a class="s0f7e155" href="/">Hashbeam</a>
+    <p class="sd2d39e8">Crypto protocols, markets and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sf4f0dbb s1522634">
+  <header class="s1b91d5f">
+    <p class="sa3e22fc"><time class="s39232be" datetime="2026-10-16T00:09:32+00:00">2026-10-16 00:09 UTC</time><span class="s6100180">3b50b7</span></p>
+    <h1 class="s06f00f2">Set a Slippage Ceiling for Treasury Swaps</h1>
+<p class="s32df8ee">Set a treasury swap ceiling by translating the maximum acceptable execution loss into a minimum output, then checking the route, fees and failure behavior.</p>    <p class="sc82b695"><span>The Hashbeam Desk</span><span class="s9d2a29e">·</span><time datetime="2026-10-16T00:09:32+00:00">Oct 16, 2026 · 00:09 UTC</time><span class="s9d2a29e">·</span><span class="s15340cb">4 min read</span></p>
+  </header>
+  <figure class="sd0e714b"><img width="1200" height="630" fetchpriority="high" class="sb855dc0" src="/assets/covers/set-a-slippage-ceiling-for-treasury-swaps.jpg" alt="Set a Slippage Ceiling for Treasury Swaps"></figure>
+  <div class="s48eadf1"><p>Set a treasury swap’s slippage ceiling by converting the maximum execution loss the mandate permits into a minimum amount of output tokens. The ceiling is an on-chain execution bound when the route enforces it: if the trade would return less than that minimum, the swap reverts. It does not guarantee a good quote, cap network fees, or ensure a cross-chain swap completes.</p>
+
+<p>For a treasury executing an exact-input trade, the key field is usually <code>amountOutMinimum</code> in the router call or its equivalent in the chosen interface. For an exact-output trade, the corresponding guard is <code>amountInMaximum</code>. A stalled cross-chain route adds separate questions about pending and completed transfers; the <a href="https://todaycrypto.org/how-to-use-thor-swap-when-a-cross-chain-swap-stalls/" rel="noopener">thor swap</a> guide covers that recovery path in more detail.</p>
+
+<h2>What does the slippage ceiling actually limit?</h2>
+
+<p>It limits how far execution can move from the quote before the transaction is rejected. In an exact-input swap, the treasury fixes the quantity sold and sets the least output it will accept. If the quote is Q output tokens and the approved tolerance is s, the minimum output is Q × (1 − s). The router compares the actual output with that minimum at execution; below it, the call reverts.</p>
+
+<p>That bound is not the same as price impact. Price impact comes from the trade’s own size against available liquidity and is already reflected in the quoted output. Slippage is the further movement between quoting or signing and execution, including intervening trades and changes in route conditions. A tolerance applied to the quoted amount can allow execution at a worse price than the headline quote, but it should not be used to disguise an already poor quote.</p>
+
+<p>For an exact-output swap, the treasury specifies the desired quantity to receive and caps the input instead. The router reverts if acquiring that output requires more than <code>amountInMaximum</code>. This is often the clearer control when a treasury has an obligation to acquire a fixed amount, while exact-input is simpler when the amount being sold is fixed. In either case, define the boundary in the token units that the contract actually checks, accounting for token decimals and the route’s fees.</p>
+
+<h2>How should a treasury choose the ceiling?</h2>
+
+<p>Choose it from the mandate’s loss limit and the trade’s execution conditions, rather than copying a default tolerance. The treasury needs to define the worst acceptable exchange rate or output amount, then encode that limit in the route’s supported parameter. A wider tolerance reduces the chance of a revert after a small market move, but permits a worse fill; a tighter one protects the rate and can leave the trade unfilled.</p>
+
+<p>Before signing, record and review:</p>
+
+<ul>
+<li><strong>Trade type:</strong> fixed input with a minimum output, or fixed output with a maximum input.</li>
+<li><strong>Quote and route:</strong> expected output, route composition, pool liquidity and fees included in the quote.</li>
+<li><strong>Execution bound:</strong> minimum received or maximum spent, in the correct token units.</li>
+<li><strong>Expiry and fee budget:</strong> when the transaction becomes invalid, and the network fee the treasury can pay even if execution fails.</li>
+</ul>
+
+<p>For an AMM router, the contract parameter matters more than a display label such as “slippage.” Uniswap v2 exact-input router calls, for example, use <code>amountOutMin</code>; Uniswap v3’s <code>exactInputSingle</code> takes <code>amountOutMinimum</code> and a <code>deadline</code>. Names and behavior vary by router and interface, so verify the transaction data or the operator’s integration rather than assuming a setting in one app maps directly to another contract’s guard.</p>
+
+<h2>What can still go wrong after setting it?</h2>
+
+<p>A ceiling can reject an uneconomic fill, but it cannot ensure the swap succeeds or make every route safe. If the market moves past the bound, the transaction reverts. The swap itself does not execute, but a public-chain transaction that reverts can still consume gas. A deadline is a separate control: it invalidates a transaction after its expiry, while the minimum-output check constrains the execution price before expiry.</p>
+
+<p>On a cross-chain route, source-chain acceptance and destination-chain settlement may be distinct steps. The source transaction’s guard may determine whether assets leave the source, while later handling can depend on the route’s own contracts and status rules. Do not assume a source-chain slippage field guarantees a minimum amount on the destination chain; inspect what the quote promises and what each transaction enforces.</p>
+
+<p>For treasury policy, the practical rule is to approve a maximum loss per trade, translate it into the router’s actual output or input bound, and reject quotes whose price impact or route is already outside policy. Use a deadline to prevent stale execution, and treat a revert as a failed trade with a fee cost—not as evidence that the guard malfunctioned. A ceiling is useful precisely because it makes the worst acceptable execution explicit; its value depends on encoding that boundary in the contract that settles the swap.</p></div>
+  <aside class="sf223b94">
+    <h2 class="s8079352">More stories</h2>
+    <ul class="sd5197b2">
+<li><a href="/ledger-details-cryptobilis-wallet-implants-lte-seed-theft/">Ledger details CryptoBilis wallet implant’s LTE seed theft</a></li><li><a href="/when-a-cross-chain-swap-expires-what-happens-to-the-funds/">When a Cross-Chain Swap Expires, What Happens to the Funds?</a></li><li><a href="/why-cross-chain-network-fees-change-before-you-submit/">Why Cross-Chain Network Fees Change Before You Submit</a></li><li><a href="/reserve-destination-gas-before-a-treasury-bridge/">Reserve Destination Gas Before a Treasury Bridge</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sb1812bb">
+  <div class="sf4f0dbb s839b679">
+    <p class="s188d99f">Hashbeam</p>
+    <ul class="sa7f5db7">
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/how-we-report/">How we report</a></li>    </ul>
+    <p class="s9ce7863">News and analysis for information, not financial advice.</p>
+    <p class="s2ef56c5">© 2026 Hashbeam</p>
+  </div>
+</footer>
+</body>
+</html>
