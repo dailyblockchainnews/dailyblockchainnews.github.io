@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://dailyblockchainnews.github.io/</loc><lastmod>2026-10-17T05:22:41+00:00</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://dailyblockchainnews.github.io/</loc><lastmod>2026-10-17T07:06:48+00:00</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://dailyblockchainnews.github.io/how-to-fund-a-node-on-one-chain-from-another/</loc><lastmod>2026-10-17T07:06:48+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://dailyblockchainnews.github.io/where-funds-go-after-a-cross-chain-swap-fails/</loc><lastmod>2026-10-17T05:22:41+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://dailyblockchainnews.github.io/judge-keeps-geminis-5-million-cftc-order-in-force/</loc><lastmod>2026-10-17T04:49:24+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://dailyblockchainnews.github.io/why-a-shorter-cross-chain-swap-route-can-cost-more/</loc><lastmod>2026-10-17T04:00:43+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -65,15 +66,15 @@
 <url><loc>https://dailyblockchainnews.github.io/sec-proposes-conditional-crypto-custody-routes-for-advisers-and-funds/</loc><lastmod>2026-10-03T05:20:20+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://dailyblockchainnews.github.io/how-chainflip-moves-native-assets-across-chains/</loc><lastmod>2026-10-02T14:27:42+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://dailyblockchainnews.github.io/base-cobalt-adds-conditional-transactions-and-b20-controls/</loc><lastmod>2026-10-01T17:06:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://dailyblockchainnews.github.io/archive/</loc><lastmod>2026-10-17T05:22:41+00:00</lastmod><priority>0.3</priority></url>
+<url><loc>https://dailyblockchainnews.github.io/archive/</loc><lastmod>2026-10-17T07:06:48+00:00</lastmod><priority>0.3</priority></url>
 <url><loc>https://dailyblockchainnews.github.io/about/</loc><lastmod>2026-10-01</lastmod><priority>0.3</priority></url>
 <url><loc>https://dailyblockchainnews.github.io/privacy/</loc><lastmod>2026-10-01</lastmod><priority>0.3</priority></url>
 <url><loc>https://dailyblockchainnews.github.io/how-we-report/</loc><lastmod>2026-10-01</lastmod><priority>0.3</priority></url>
-<url><loc>https://dailyblockchainnews.github.io/page/2/</loc><lastmod>2026-10-17T05:22:41+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://dailyblockchainnews.github.io/page/3/</loc><lastmod>2026-10-17T05:22:41+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://dailyblockchainnews.github.io/page/4/</loc><lastmod>2026-10-17T05:22:41+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://dailyblockchainnews.github.io/page/5/</loc><lastmod>2026-10-17T05:22:41+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://dailyblockchainnews.github.io/page/6/</loc><lastmod>2026-10-17T05:22:41+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://dailyblockchainnews.github.io/page/7/</loc><lastmod>2026-10-17T05:22:41+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://dailyblockchainnews.github.io/archive/page/2/</loc><lastmod>2026-10-17T05:22:41+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://dailyblockchainnews.github.io/page/2/</loc><lastmod>2026-10-17T07:06:48+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://dailyblockchainnews.github.io/page/3/</loc><lastmod>2026-10-17T07:06:48+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://dailyblockchainnews.github.io/page/4/</loc><lastmod>2026-10-17T07:06:48+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://dailyblockchainnews.github.io/page/5/</loc><lastmod>2026-10-17T07:06:48+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://dailyblockchainnews.github.io/page/6/</loc><lastmod>2026-10-17T07:06:48+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://dailyblockchainnews.github.io/page/7/</loc><lastmod>2026-10-17T07:06:48+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://dailyblockchainnews.github.io/archive/page/2/</loc><lastmod>2026-10-17T07:06:48+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
 </urlset>
