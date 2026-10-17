@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en-GB" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-Chain Swap Routes: Why Fewer Hops Can Cost More</title>
+<meta name="description" content="A cross-chain route with fewer hops can still return less: pool depth, price impact, destination gas and failure handling determine the net amount delivered.">
+<link rel="canonical" href="https://dailyblockchainnews.github.io/why-a-shorter-cross-chain-swap-route-can-cost-more/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1817">
+<meta name="author" content="The Hashbeam Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Hashbeam">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Why a Shorter Cross-Chain Swap Route Can Cost More">
+<meta property="og:description" content="A cross-chain route with fewer hops can still return less: pool depth, price impact, destination gas and failure handling determine the net amount delivered.">
+<meta property="og:url" content="https://dailyblockchainnews.github.io/why-a-shorter-cross-chain-swap-route-can-cost-more/">
+<meta property="og:image" content="https://dailyblockchainnews.github.io/assets/covers/why-a-shorter-cross-chain-swap-route-can-cost-more-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why a Shorter Cross-Chain Swap Route Can Cost More"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why a Shorter Cross-Chain Swap Route Can Cost More">
+<meta name="twitter:description" content="A cross-chain route with fewer hops can still return less: pool depth, price impact, destination gas and failure handling determine the net amount delivered.">
+<meta property="article:published_time" content="2026-10-17T04:00:43+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s9b31fc2faf.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Hashbeam" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyblockchainnews.github.io/#website",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Hashbeam reports crypto news: protocol upgrades, network security, exchanges, stablecoins, regulation and market structure across blockchains and tokens."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyblockchainnews.github.io/why-a-shorter-cross-chain-swap-route-can-cost-more/#webpage",
+      "url": "https://dailyblockchainnews.github.io/why-a-shorter-cross-chain-swap-route-can-cost-more/",
+      "name": "Cross-Chain Swap Routes: Why Fewer Hops Can Cost More",
+      "isPartOf": {
+        "@id": "https://dailyblockchainnews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyblockchainnews.github.io/why-a-shorter-cross-chain-swap-route-can-cost-more/#article",
+      "headline": "Why a Shorter Cross-Chain Swap Route Can Cost More",
+      "isAccessibleForFree": true,
+      "description": "A cross-chain route with fewer hops can still return less: pool depth, price impact, destination gas and failure handling determine the net amount delivered.",
+      "datePublished": "2026-10-17T04:00:43+00:00",
+      "dateModified": "2026-10-17T04:00:43+00:00",
+      "url": "https://dailyblockchainnews.github.io/why-a-shorter-cross-chain-swap-route-can-cost-more/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyblockchainnews.github.io/why-a-shorter-cross-chain-swap-route-can-cost-more/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "wordCount": 860,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/why-a-shorter-cross-chain-swap-route-can-cost-more-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/why-a-shorter-cross-chain-swap-route-can-cost-more-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/why-a-shorter-cross-chain-swap-route-can-cost-more-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyblockchainnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why a Shorter Cross-Chain Swap Route Can Cost More",
+          "item": "https://dailyblockchainnews.github.io/why-a-shorter-cross-chain-swap-route-can-cost-more/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailyblockchainnews.github.io/#org",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyblockchainnews.github.io/how-we-report/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1fb3751" href="#main">Skip to main content</a>
+<header class="s21c5601">
+  <div class="sf4f0dbb s6484681">
+    <a class="s0f7e155" href="/">Hashbeam</a>
+    <p class="sd2d39e8">Crypto protocols, markets and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sf4f0dbb s1522634">
+  <header class="s1b91d5f">
+    <p class="sa3e22fc"><time class="s39232be" datetime="2026-10-17T04:00:43+00:00">2026-10-17 04:00 UTC</time><span class="s6100180">ab08aa</span></p>
+    <h1 class="s06f00f2">Why a Shorter Cross-Chain Swap Route Can Cost More</h1>
+<p class="s32df8ee">A cross-chain route with fewer hops can still return less: pool depth, price impact, destination gas and failure handling determine the net amount delivered.</p>    <p class="sc82b695"><span>The Hashbeam Desk</span><span class="s9d2a29e">·</span><time datetime="2026-10-17T04:00:43+00:00">Oct 17, 2026 · 04:00 UTC</time><span class="s9d2a29e">·</span><span class="s15340cb">5 min read</span></p>
+  </header>
+  <figure class="sd0e714b"><img width="1200" height="630" fetchpriority="high" class="sb855dc0" src="/assets/covers/why-a-shorter-cross-chain-swap-route-can-cost-more.jpg" alt="Why a Shorter Cross-Chain Swap Route Can Cost More"></figure>
+  <div class="s48eadf1"><p>A cross-chain swap route with fewer hops can cost more when its pools are shallower, its price impact is higher, or its destination-chain fee is larger. The useful comparison is the amount expected to arrive after swap fees and network costs, alongside the time and failure conditions attached to that quote. “Direct” describes a path; it does not guarantee a better execution price.</p>
+
+<p>In THORChain, a swap between two non-RUNE assets uses two continuous liquidity pool (CLP) legs: the source asset is swapped into RUNE, then RUNE into the destination asset. The network handles both legs as one swap flow, while the final asset is sent from a vault on its native chain. A practical <a href="https://dev.to/jake-eth/thor-swap-route-checks-before-choosing-a-destination-chain-215n" rel="noopener">thor swap</a> route check also needs to account for destination-specific delivery details; that fuller walkthrough covers those checks.</p>
+
+<h2>Why can a route with fewer hops return less?</h2>
+
+<p>Each pool leg trades against available liquidity, so the route’s output depends on pool balances and the size of the trade relative to them. In a constant-product pool, a larger input shifts the balance more and moves the execution price against the swap. The resulting price impact compounds across legs: a route that passes through one deep pool may outperform a nominally shorter route that crosses a thin pool.</p>
+
+<p>Routes can also differ in what “one hop” means. An aggregator may split an order across several pools, or route through an intermediate asset, to improve the combined quote. That adds execution steps and may create extra fees or points of failure, but it can reduce the price impact in any one pool. Conversely, a direct pool can be cheaper when it has enough depth and the route avoids unnecessary conversions.</p>
+
+<p>Compare the same input amount and destination address, then inspect the estimated net output. The quote should reflect the swap’s price impact and protocol fees, as well as any destination-chain network fee deducted before delivery. A route with a better displayed exchange rate can still deliver less if its fixed or variable costs are higher.</p>
+
+<h2>What costs should a route quote include?</h2>
+
+<p>A route quote is useful only if it accounts for costs at each stage. Separate costs paid directly by the sender from those deducted from the swap output: the source-chain transaction fee is usually paid to broadcast the deposit, while liquidity and outbound fees reduce what can be delivered.</p>
+
+<ul>
+<li><strong>Source-chain fee:</strong> the fee to send the input asset. Congestion or a wallet’s fee setting can affect the cost and confirmation time.</li>
+<li><strong>Pool price impact and liquidity fee:</strong> the trade changes pool balances; larger trades relative to pool depth generally incur greater impact and a larger slip-based fee.</li>
+<li><strong>Destination-chain outbound fee:</strong> the network must pay to send the output asset. Its cost depends on the destination chain and current fee conditions.</li>
+<li><strong>Optional interface or affiliate fee:</strong> an interface may charge an additional fee. Check whether it is included in the quoted output.</li>
+</ul>
+
+<p>These costs do not all scale the same way. Price impact is sensitive to trade size and pool depth; outbound fees are tied to delivery on the destination chain. A route with another pool leg may add liquidity costs, while a route that avoids that leg may still have a more expensive outbound transaction. The net amount is the comparable figure.</p>
+
+<h2>How do timing and failure handling change the choice?</h2>
+
+<p>A route’s quoted output is an estimate for execution conditions that may change before all steps finish. Cross-chain swaps depend on observing the source transaction and completing delivery on another chain; congestion, changing fees, or a route’s execution constraints can affect timing and the final result.</p>
+
+<p>Some protocols offer streaming execution, splitting a large swap into smaller sub-swaps over time. In THORChain, smaller executions can reduce per-swap price impact and give arbitrageurs time to rebalance pools between parts. The trade-off is duration: the full amount is not delivered in one immediate step, and a price limit can prevent remaining parts from executing if the limit is no longer met.</p>
+
+<p>Before signing, check the minimum output, destination address and asset, estimated delivery time, and what happens if the route cannot complete. A refund path is not the same as instant recovery: the input may need to be returned through a separate transaction, with its own delay or fee. Never treat a quoted output as guaranteed unless the protocol’s execution rules make it so.</p>
+
+<h2>How should you choose between routes?</h2>
+
+<p>Choose by net output under acceptable timing and failure conditions, not by hop count alone. For a small swap, a direct route through sufficiently deep pools often avoids unnecessary steps. For a larger trade, a split route or a slower streamed swap can be better if it reduces price impact enough to offset added time and costs.</p>
+
+<p>Compare routes using the same input and destination, and distinguish quoted output from minimum guaranteed output. Check every fee, the pool depth behind each leg, the destination-chain delivery cost, and whether execution is atomic, split, or subject to a time limit. When two routes are close, fewer dependencies can make the simpler route easier to reason about; when liquidity is uneven, the deeper route can win despite taking more steps.</p></div>
+  <aside class="sf223b94">
+    <h2 class="s8079352">More stories</h2>
+    <ul class="sd5197b2">
+<li><a href="/what-bridge-and-swap-does-on-mantle/">What Bridge-and-Swap Does on Mantle</a></li><li><a href="/how-a-token-with-no-gas-can-fund-its-own-swap/">How a Token With No Gas Can Fund Its Own Swap</a></li><li><a href="/why-destination-events-can-precede-swap-status-updates/">Why Destination Events Can Precede Swap Status Updates</a></li><li><a href="/how-to-fund-a-solana-lending-market-from-ethereum/">How to Fund a Solana Lending Market From Ethereum</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sb1812bb">
+  <div class="sf4f0dbb s839b679">
+    <p class="s188d99f">Hashbeam</p>
+    <ul class="sa7f5db7">
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/how-we-report/">How we report</a></li>    </ul>
+    <p class="s9ce7863">News and analysis for information, not financial advice.</p>
+    <p class="s2ef56c5">© 2026 Hashbeam</p>
+  </div>
+</footer>
+</body>
+</html>
