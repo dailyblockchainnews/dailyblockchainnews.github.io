@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en-GB" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bridge Quotes and Transaction Replacement | Hashbeam</title>
+<meta name="description" content="On EVM chains, replacing a pending source transaction changes which call can execute at a nonce; bridge tracking and quote deadlines determine whether the transfer proceeds.">
+<link rel="canonical" href="https://dailyblockchainnews.github.io/when-a-replaced-transaction-breaks-a-bridge-quote/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1817">
+<meta name="author" content="The Hashbeam Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Hashbeam">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="When a Replaced Transaction Breaks a Bridge Quote">
+<meta property="og:description" content="On EVM chains, replacing a pending source transaction changes which call can execute at a nonce; bridge tracking and quote deadlines determine whether the transfer proceeds.">
+<meta property="og:url" content="https://dailyblockchainnews.github.io/when-a-replaced-transaction-breaks-a-bridge-quote/">
+<meta property="og:image" content="https://dailyblockchainnews.github.io/assets/covers/when-a-replaced-transaction-breaks-a-bridge-quote-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="When a Replaced Transaction Breaks a Bridge Quote"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="When a Replaced Transaction Breaks a Bridge Quote">
+<meta name="twitter:description" content="On EVM chains, replacing a pending source transaction changes which call can execute at a nonce; bridge tracking and quote deadlines determine whether the transfer proceeds.">
+<meta property="article:published_time" content="2026-10-17T10:50:50+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s9b31fc2faf.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Hashbeam" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyblockchainnews.github.io/#website",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Hashbeam reports crypto news: protocol upgrades, network security, exchanges, stablecoins, regulation and market structure across blockchains and tokens."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyblockchainnews.github.io/when-a-replaced-transaction-breaks-a-bridge-quote/#webpage",
+      "url": "https://dailyblockchainnews.github.io/when-a-replaced-transaction-breaks-a-bridge-quote/",
+      "name": "Bridge Quotes and Transaction Replacement | Hashbeam",
+      "isPartOf": {
+        "@id": "https://dailyblockchainnews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyblockchainnews.github.io/when-a-replaced-transaction-breaks-a-bridge-quote/#article",
+      "headline": "When a Replaced Transaction Breaks a Bridge Quote",
+      "isAccessibleForFree": true,
+      "description": "On EVM chains, replacing a pending source transaction changes which call can execute at a nonce; bridge tracking and quote deadlines determine whether the transfer proceeds.",
+      "datePublished": "2026-10-17T10:50:50+00:00",
+      "dateModified": "2026-10-17T10:50:50+00:00",
+      "url": "https://dailyblockchainnews.github.io/when-a-replaced-transaction-breaks-a-bridge-quote/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyblockchainnews.github.io/when-a-replaced-transaction-breaks-a-bridge-quote/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "wordCount": 853,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/when-a-replaced-transaction-breaks-a-bridge-quote-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/when-a-replaced-transaction-breaks-a-bridge-quote-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/when-a-replaced-transaction-breaks-a-bridge-quote-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyblockchainnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "When a Replaced Transaction Breaks a Bridge Quote",
+          "item": "https://dailyblockchainnews.github.io/when-a-replaced-transaction-breaks-a-bridge-quote/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailyblockchainnews.github.io/#org",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyblockchainnews.github.io/how-we-report/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1fb3751" href="#main">Skip to main content</a>
+<header class="s21c5601">
+  <div class="sf4f0dbb s6484681">
+    <a class="s0f7e155" href="/">Hashbeam</a>
+    <p class="sd2d39e8">Crypto protocols, markets and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sf4f0dbb s1522634">
+  <header class="s1b91d5f">
+    <p class="sa3e22fc"><time class="s39232be" datetime="2026-10-17T10:50:50+00:00">2026-10-17 10:50 UTC</time><span class="s6100180">534637</span></p>
+    <h1 class="s06f00f2">When a Replaced Transaction Breaks a Bridge Quote</h1>
+<p class="s32df8ee">On EVM chains, replacing a pending source transaction changes which call can execute at a nonce; bridge tracking and quote deadlines determine whether the transfer proceeds.</p>    <p class="sc82b695"><span>The Hashbeam Desk</span><span class="s9d2a29e">·</span><time datetime="2026-10-17T10:50:50+00:00">Oct 17, 2026 · 10:50 UTC</time><span class="s9d2a29e">·</span><span class="s15340cb">5 min read</span></p>
+  </header>
+  <figure class="sd0e714b"><img width="1200" height="630" fetchpriority="high" class="sb855dc0" src="/assets/covers/when-a-replaced-transaction-breaks-a-bridge-quote.jpg" alt="When a Replaced Transaction Breaks a Bridge Quote"></figure>
+  <div class="s48eadf1"><p>Replacing a pending source-chain transaction can change whether a bridge receives the deposit described by its quote. On Ethereum-style accounts, a transaction’s nonce identifies its position in the sender’s sequence; two valid transactions from that account with the same nonce are alternatives, and at most one can be included in the canonical chain. The mechanics behind <a href="https://bitcurrent.news/how-biswap-moves-and-swaps-crypto-across-chains/" rel="noopener">Biswap’s cross-chain swaps</a> show why the quoted route and the source-chain call need to be considered together. A replacement changes the transaction the chain may execute, while the bridge’s application decides how to recognize and process that execution.</p>
+
+<h2>What does replacing a pending transaction change?</h2>
+<p>On Ethereum, a replacement is a newly signed transaction from the same account with the same nonce. Nodes may accept it into their transaction pools under local replacement policies, commonly requiring a higher fee bid. That policy helps nodes decide which candidate to keep; it is not a consensus rule that changes the transaction already recorded on-chain.</p>
+<p>With an EIP-1559 type-2 transaction, the signed fields include the nonce, destination, value, calldata, gas limit, max fee per gas and max priority fee per gas. A speed-up usually changes the fee fields while keeping the call’s destination, value and calldata. The transaction hash changes because the signed transaction changed, but its intended contract call remains the same. A cancellation usually submits a zero-value transaction to the sender’s own address with that nonce. If it is included first, the original transaction can no longer execute with that nonce.</p>
+<p>A replacement can also change the destination, value or calldata. In that case, it is not merely a faster version of the bridge call: it is a different call competing for the same nonce. If that replacement is included first, the bridge deposit encoded by the original call does not happen. A transaction in a wallet’s “pending” view is only a candidate; until inclusion, the eventual call is unresolved.</p>
+
+<h2>How can that disrupt a bridge quote?</h2>
+<p>A bridge quote describes an intended transfer under a particular set of parameters, but the quote’s expiry and enforcement depend on the route. A user interface may show a time limit, while the transaction may separately encode a deadline or minimum output that a contract checks. Some routes use off-chain quotes or solver terms that are checked during execution. There is no single bridge-wide quote rule.</p>
+<p>The risk appears when the bridge’s quote, the signed source transaction and the bridge’s tracking record stop referring to the same action. For example, an app may associate a quote with the original transaction hash. A fee-only replacement has a new hash even if it still calls the same bridge contract with the same calldata. If the app or relayer does not discover the new hash, its status display may remain stale. If the replacement changes calldata, it may no longer emit the source event or satisfy the route’s expected parameters at all.</p>
+<p>There is a second timing edge. A fee-only replacement can help a transaction get included sooner, but it does not renew an expired quote or extend a deadline encoded in the call. If execution checks a deadline and the replacement lands after it, the call may revert. If the quote was only an interface timer and the contract has no corresponding deadline, expiry may instead affect the application or solver’s willingness to process the order. The exact failure depends on where the route enforces validity.</p>
+
+<h2>What should users and bridge interfaces verify?</h2>
+<p>Before replacing a bridge transaction, compare the replacement’s call data and value with the transaction you intend to complete, then check whether the quote or on-chain deadline remains valid. A speed-up that preserves the bridge call is materially different from a cancellation or an edited transaction, even though each may use the same nonce.</p>
+<ul>
+<li>Confirm the sender and nonce match the pending transaction; otherwise, the new transaction does not replace it.</li>
+<li>For a speed-up, check the destination, value and calldata as well as the fee fields. Matching the hash is impossible because the replacement has a different hash.</li>
+<li>After submission, track the replacement hash and verify the source-chain receipt and bridge event. A wallet’s pending indicator is not proof that the bridge deposit occurred.</li>
+<li>If a cancellation or edited replacement is mined, do not assume the original quote still represents an active transfer. Recheck the bridge’s status and obtain a fresh quote before submitting another deposit.</li>
+</ul>
+<p>Once a source transaction is included, its nonce is consumed on that chain. A later transaction using the same nonce cannot simply undo the included deposit; a chain reorganisation is a separate event that can remove an inclusion from the canonical history. For a confirmed deposit, follow the bridge’s recovery or settlement process rather than trying to replace the source transaction.</p>
+<p>For most users, a fee-only speed-up is the appropriate replacement when the goal is to preserve a bridge deposit and the quote remains valid. Cancellation is a different decision: it abandons that nonce’s original call if the cancellation wins. The practical check is simple—verify which transaction was included, whether it emitted the expected bridge event, and whether the route’s validity conditions still hold.</p></div>
+  <aside class="sf223b94">
+    <h2 class="s8079352">More stories</h2>
+    <ul class="sd5197b2">
+<li><a href="/how-to-fund-a-node-on-one-chain-from-another/">How to Fund a Node on One Chain From Another</a></li><li><a href="/where-funds-go-after-a-cross-chain-swap-fails/">Where Funds Go After a Cross-Chain Swap Fails</a></li><li><a href="/judge-keeps-geminis-5-million-cftc-order-in-force/">Judge keeps Gemini’s $5 million CFTC order in force</a></li><li><a href="/why-a-shorter-cross-chain-swap-route-can-cost-more/">Why a Shorter Cross-Chain Swap Route Can Cost More</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sb1812bb">
+  <div class="sf4f0dbb s839b679">
+    <p class="s188d99f">Hashbeam</p>
+    <ul class="sa7f5db7">
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/how-we-report/">How we report</a></li>    </ul>
+    <p class="s9ce7863">News and analysis for information, not financial advice.</p>
+    <p class="s2ef56c5">© 2026 Hashbeam</p>
+  </div>
+</footer>
+</body>
+</html>
