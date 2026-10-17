@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en-GB" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turn an Unspendable Token Into Native Gas | Hashbeam</title>
+<meta name="description" content="An ERC-20 balance cannot pay its own first transaction fee; a compatible paymaster or funded relayer can front native gas and recover the cost in tokens.">
+<link rel="canonical" href="https://dailyblockchainnews.github.io/how-a-token-with-no-gas-can-fund-its-own-swap/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1817">
+<meta name="author" content="The Hashbeam Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Hashbeam">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="How a Token With No Gas Can Fund Its Own Swap">
+<meta property="og:description" content="An ERC-20 balance cannot pay its own first transaction fee; a compatible paymaster or funded relayer can front native gas and recover the cost in tokens.">
+<meta property="og:url" content="https://dailyblockchainnews.github.io/how-a-token-with-no-gas-can-fund-its-own-swap/">
+<meta property="og:image" content="https://dailyblockchainnews.github.io/assets/covers/how-a-token-with-no-gas-can-fund-its-own-swap-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How a Token With No Gas Can Fund Its Own Swap"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How a Token With No Gas Can Fund Its Own Swap">
+<meta name="twitter:description" content="An ERC-20 balance cannot pay its own first transaction fee; a compatible paymaster or funded relayer can front native gas and recover the cost in tokens.">
+<meta property="article:published_time" content="2026-10-17T01:10:26+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s9b31fc2faf.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Hashbeam" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyblockchainnews.github.io/#website",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Hashbeam reports crypto news: protocol upgrades, network security, exchanges, stablecoins, regulation and market structure across blockchains and tokens."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyblockchainnews.github.io/how-a-token-with-no-gas-can-fund-its-own-swap/#webpage",
+      "url": "https://dailyblockchainnews.github.io/how-a-token-with-no-gas-can-fund-its-own-swap/",
+      "name": "Turn an Unspendable Token Into Native Gas | Hashbeam",
+      "isPartOf": {
+        "@id": "https://dailyblockchainnews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyblockchainnews.github.io/how-a-token-with-no-gas-can-fund-its-own-swap/#article",
+      "headline": "How a Token With No Gas Can Fund Its Own Swap",
+      "isAccessibleForFree": true,
+      "description": "An ERC-20 balance cannot pay its own first transaction fee; a compatible paymaster or funded relayer can front native gas and recover the cost in tokens.",
+      "datePublished": "2026-10-17T01:10:26+00:00",
+      "dateModified": "2026-10-17T01:10:26+00:00",
+      "url": "https://dailyblockchainnews.github.io/how-a-token-with-no-gas-can-fund-its-own-swap/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyblockchainnews.github.io/how-a-token-with-no-gas-can-fund-its-own-swap/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "wordCount": 844,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/how-a-token-with-no-gas-can-fund-its-own-swap-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/how-a-token-with-no-gas-can-fund-its-own-swap-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/how-a-token-with-no-gas-can-fund-its-own-swap-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyblockchainnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How a Token With No Gas Can Fund Its Own Swap",
+          "item": "https://dailyblockchainnews.github.io/how-a-token-with-no-gas-can-fund-its-own-swap/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailyblockchainnews.github.io/#org",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyblockchainnews.github.io/how-we-report/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1fb3751" href="#main">Skip to main content</a>
+<header class="s21c5601">
+  <div class="sf4f0dbb s6484681">
+    <a class="s0f7e155" href="/">Hashbeam</a>
+    <p class="sd2d39e8">Crypto protocols, markets and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sf4f0dbb s1522634">
+  <header class="s1b91d5f">
+    <p class="sa3e22fc"><time class="s39232be" datetime="2026-10-17T01:10:26+00:00">2026-10-17 01:10 UTC</time><span class="s6100180">9218dc</span></p>
+    <h1 class="s06f00f2">How a Token With No Gas Can Fund Its Own Swap</h1>
+<p class="s32df8ee">An ERC-20 balance cannot pay its own first transaction fee; a compatible paymaster or funded relayer can front native gas and recover the cost in tokens.</p>    <p class="sc82b695"><span>The Hashbeam Desk</span><span class="s9d2a29e">·</span><time datetime="2026-10-17T01:10:26+00:00">Oct 17, 2026 · 01:10 UTC</time><span class="s9d2a29e">·</span><span class="s15340cb">5 min read</span></p>
+  </header>
+  <figure class="sd0e714b"><img width="1200" height="630" fetchpriority="high" class="sb855dc0" src="/assets/covers/how-a-token-with-no-gas-can-fund-its-own-swap.jpg" alt="How a Token With No Gas Can Fund Its Own Swap"></figure>
+  <div class="s48eadf1"><p>An ERC-20 token cannot pay the gas for its own transfer from an ordinary externally owned account: the chain charges transaction fees in its native currency before the token contract can move anything. To turn that stranded balance into gas, you need another payer to submit the transaction—a paymaster, a relayer, or a separate wallet that sends a small amount of native currency. The useful distinction is that the token does not become gas at the protocol level; a service advances the gas and collects an agreed token payment.</p>
+
+<p>That distinction matters for swaps. A decentralized exchange call still has to be included in a transaction, and its sender must cover the network fee. For a cross-chain route, the source-chain transaction also needs funding before the asset reaches the swap protocol. The <a href="https://blockbrief.pages.dev/how-to-make-a-first-cross-chain-trade-with-thor-swap/" rel="noopener">thor swap</a> guide covers that trade path in more detail; the key point here is that a swap interface alone does not remove the source-chain fee requirement.</p>
+
+<h2>Why can’t the token pay its own gas?</h2>
+
+<p>On Ethereum-style networks, a transaction has a sender, a nonce, a gas limit, and fee fields denominated in the chain’s native currency. The execution layer charges the sender for computation whether the transaction succeeds or reverts. An ERC-20 transfer is a call to the token contract’s <code>transfer</code> function, but that call runs only after the transaction has been accepted and its fee payer established.</p>
+
+<p>The token contract can update balances; it cannot change the chain’s fee rules. A normal wallet holding only an ERC-20 therefore cannot directly submit the transfer needed to sell that token. The same snag applies to a swap: the router call is another transaction, not a special exception. Nor does an ERC-20 allowance solve it. <code>approve</code> is itself a transaction that needs gas.</p>
+
+<p>An EIP-2612-style permit can let a user sign an allowance off-chain, avoiding a separate on-chain approval transaction when the token and application support it. But a relayer still has to submit the transaction, and that relayer must pay gas. A permit changes how authorization is delivered; it does not make the token acceptable to the network as a fee currency.</p>
+
+<h2>How does a paymaster turn tokens into a fee payment?</h2>
+
+<p>An ERC-4337 paymaster can sponsor a smart account’s operation and charge for that service in a supported ERC-20. The user signs a <code>UserOperation</code> describing the intended call; a bundler submits it through the <code>EntryPoint</code> contract. The EntryPoint checks that the paymaster has enough native currency deposited to cover the operation, then asks the paymaster whether it will sponsor it. If approved, the paymaster fronts the network fee and can collect the token payment under its rules.</p>
+
+<p>This is fee abstraction, not a protocol change to gas accounting. The bundler’s on-chain transaction still pays the network fee in native currency. The paymaster needs that currency in its EntryPoint deposit, and its validation logic decides which users, operations, and tokens qualify. Its service may require a token balance, a signed quote, a fee markup, or an allowance. Support is specific to the account implementation, chain, paymaster, and token; an arbitrary ERC-20 balance is not automatically eligible.</p>
+
+<p>EIP-7702 can let an externally owned account delegate code so it can use smart-account behavior, including sponsored operations when paired with compatible infrastructure. The authorization does not itself supply a sponsor or make every token spendable as a fee. The account still needs to authorize the operation, and a paymaster or other payer must agree to fund it.</p>
+
+<h2>What should you check before trying it?</h2>
+
+<p>First establish whether the wallet offers a sponsored transaction or token-paid gas flow on that specific network. If it does, check the quoted token charge and the exact action being authorized. The transaction may bundle a token transfer or swap with the sponsored operation, but the sponsor’s policy and token support determine whether that route is available.</p>
+
+<ul>
+<li>Confirm the token contract and network. A token with the same ticker on another chain is a different asset and will not pay this operation.</li>
+<li>Check the displayed token fee, expected output, and minimum received after slippage. The sponsor’s charge can make a small balance uneconomic to recover.</li>
+<li>Read the wallet prompt for the call target, spending limit, and signature scope. A permit or account delegation can authorize token movement beyond the immediate gas charge if it is too broad.</li>
+<li>Keep enough token value to cover the fee and execution. A rejected operation may not complete the swap, and a reverted on-chain operation can still consume gas paid by its sponsor.</li>
+</ul>
+
+<p>If no compatible paymaster is available, the dependable route is to have another account send a small amount of the chain’s native currency, then submit the token transfer or swap normally. A centralized service may offer a sponsored deposit path, but that depends on its deposit rules and is not an on-chain guarantee. For most stranded balances, a small, deliberate top-up is simpler than relying on token-specific sponsorship. Where sponsorship is available, it can make the first action possible—but the token is payment to the sponsor, not gas in the chain’s fee market.</p></div>
+  <aside class="sf223b94">
+    <h2 class="s8079352">More stories</h2>
+    <ul class="sd5197b2">
+<li><a href="/why-destination-events-can-precede-swap-status-updates/">Why Destination Events Can Precede Swap Status Updates</a></li><li><a href="/how-to-fund-a-solana-lending-market-from-ethereum/">How to Fund a Solana Lending Market From Ethereum</a></li><li><a href="/what-a-cross-chain-swap-quote-actually-promises/">What a cross-chain swap quote actually promises</a></li><li><a href="/estimate-crypto-bridge-transfer-time-by-stage/">Estimate Crypto Bridge Transfer Time by Stage</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sb1812bb">
+  <div class="sf4f0dbb s839b679">
+    <p class="s188d99f">Hashbeam</p>
+    <ul class="sa7f5db7">
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/how-we-report/">How we report</a></li>    </ul>
+    <p class="s9ce7863">News and analysis for information, not financial advice.</p>
+    <p class="s2ef56c5">© 2026 Hashbeam</p>
+  </div>
+</footer>
+</body>
+</html>
