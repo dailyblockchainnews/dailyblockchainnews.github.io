@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en-GB" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Can an Ethereum MEV-Boost Relay See? Payload View</title>
+<meta name="description" content="What can an Ethereum MEV-Boost relay see? It sees submitted payload transactions and their order, while the validator signs a blinded header first.">
+<link rel="canonical" href="https://dailyblockchainnews.github.io/how-to-see-what-an-ethereum-mev-boost-relay-sees-before-signing/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1817">
+<meta name="author" content="The Hashbeam Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Hashbeam">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="How to See What an Ethereum MEV-Boost Relay Sees Before Signing">
+<meta property="og:description" content="What can an Ethereum MEV-Boost relay see? It sees submitted payload transactions and their order, while the validator signs a blinded header first.">
+<meta property="og:url" content="https://dailyblockchainnews.github.io/how-to-see-what-an-ethereum-mev-boost-relay-sees-before-signing/">
+<meta property="og:image" content="https://dailyblockchainnews.github.io/assets/covers/how-to-see-what-an-ethereum-mev-boost-relay-sees-before-signing-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to See What an Ethereum MEV-Boost Relay Sees Before Signing"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to See What an Ethereum MEV-Boost Relay Sees Before Signing">
+<meta name="twitter:description" content="What can an Ethereum MEV-Boost relay see? It sees submitted payload transactions and their order, while the validator signs a blinded header first.">
+<meta property="article:published_time" content="2026-11-17T11:45:11+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s9b31fc2faf.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Hashbeam" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyblockchainnews.github.io/#website",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Hashbeam reports crypto news: protocol upgrades, network security, exchanges, stablecoins, regulation and market structure across blockchains and tokens."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyblockchainnews.github.io/how-to-see-what-an-ethereum-mev-boost-relay-sees-before-signing/#webpage",
+      "url": "https://dailyblockchainnews.github.io/how-to-see-what-an-ethereum-mev-boost-relay-sees-before-signing/",
+      "name": "What Can an Ethereum MEV-Boost Relay See? Payload View",
+      "isPartOf": {
+        "@id": "https://dailyblockchainnews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyblockchainnews.github.io/how-to-see-what-an-ethereum-mev-boost-relay-sees-before-signing/#article",
+      "headline": "How to See What an Ethereum MEV-Boost Relay Sees Before Signing",
+      "isAccessibleForFree": true,
+      "description": "What can an Ethereum MEV-Boost relay see? It sees submitted payload transactions and their order, while the validator signs a blinded header first.",
+      "datePublished": "2026-11-17T11:45:11+00:00",
+      "dateModified": "2026-11-17T11:45:11+00:00",
+      "url": "https://dailyblockchainnews.github.io/how-to-see-what-an-ethereum-mev-boost-relay-sees-before-signing/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyblockchainnews.github.io/how-to-see-what-an-ethereum-mev-boost-relay-sees-before-signing/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "wordCount": 716,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/how-to-see-what-an-ethereum-mev-boost-relay-sees-before-signing-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/how-to-see-what-an-ethereum-mev-boost-relay-sees-before-signing-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/how-to-see-what-an-ethereum-mev-boost-relay-sees-before-signing-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyblockchainnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to See What an Ethereum MEV-Boost Relay Sees Before Signing",
+          "item": "https://dailyblockchainnews.github.io/how-to-see-what-an-ethereum-mev-boost-relay-sees-before-signing/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailyblockchainnews.github.io/#org",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyblockchainnews.github.io/how-we-report/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1fb3751" href="#main">Skip to main content</a>
+<header class="s21c5601">
+  <div class="sf4f0dbb s6484681">
+    <a class="s0f7e155" href="/">Hashbeam</a>
+    <p class="sd2d39e8">Crypto protocols, markets and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sf4f0dbb s1522634">
+  <header class="s1b91d5f">
+    <p class="sa3e22fc"><time class="s39232be" datetime="2026-11-17T11:45:11+00:00">2026-11-17 11:45 UTC</time><span class="s6100180">fbb448</span></p>
+    <h1 class="s06f00f2">How to See What an Ethereum MEV-Boost Relay Sees Before Signing</h1>
+<p class="s32df8ee">What can an Ethereum MEV-Boost relay see? It sees submitted payload transactions and their order, while the validator signs a blinded header first.</p>    <p class="sc82b695"><span>The Hashbeam Desk</span><span class="s9d2a29e">·</span><time datetime="2026-11-17T11:45:11+00:00">Nov 17, 2026 · 11:45 UTC</time><span class="s9d2a29e">·</span><span class="s15340cb">4 min read</span></p>
+  </header>
+  <figure class="sd0e714b"><img width="1200" height="630" fetchpriority="high" class="sb855dc0" src="/assets/covers/how-to-see-what-an-ethereum-mev-boost-relay-sees-before-signing.jpg" alt="How to See What an Ethereum MEV-Boost Relay Sees Before Signing"></figure>
+  <div class="s48eadf1"><p>An Ethereum MEV-Boost relay can see the full execution payload a builder submits to it, including transaction contents and order, because it checks and brokers that block before the validator signs a blinded block. The validator sees the header and bid information first, then receives the matching payload from the relay after signing.</p>
+<p>That boundary matters when you are judging who can see a transaction and who must be trusted: <a href="https://dailyblockchainnews.github.io/flashbots-who-controls-each-step/">Flashbots trust by layer</a> changes how to interpret this relay-level view. Flashbots Relay sees the payloads submitted to it, while a private route to another endpoint stays outside that view unless its transaction later enters a block submitted there.</p>
+<h2>What does the relay see before the validator signs?</h2>
+<p>The relay sees the builder’s complete candidate block before it sends a blinded block header to the validator. A blinded block contains an execution payload header rather than the full execution payload, so the validator can consider and sign the block without seeing its transactions at that stage.</p>
+<p>The sequence for one proposed block is:</p>
+<ol>
+<li><strong>Builder submits the payload.</strong> The builder sends the complete execution payload to a relay. It includes the transactions and their order.</li>
+<li><strong>Relay checks and brokers it.</strong> The relay checks the submitted block and offers it to the validator through a blinded block header with bid information.</li>
+<li><strong>Validator signs the blinded block.</strong> The validator signs the header without first receiving the full payload.</li>
+<li><strong>Relay returns the payload.</strong> After receiving the signed blinded block, the relay returns the matching execution payload so it can be published.</li>
+</ol>
+<p>Take a validator choosing between candidate blocks for a proposal. Before it signs, the relay handling a candidate can inspect that candidate’s transactions and ordering. The validator sees the bid information and the execution payload header, not those transaction details. Once the validator signs, the relay returns the payload associated with that header.</p>
+<p>This distinction helps when assessing transaction privacy. A relay’s early view is limited to blocks builders submit to it; using MEV-Boost does not give that relay automatic visibility into every pending transaction sent privately elsewhere. A transaction routed to another endpoint is outside the relay’s view unless it later becomes part of a payload submitted there. The relay’s visibility follows the data it receives, not every route a transaction might take.</p>
+<h2>What stays outside the relay’s view?</h2>
+<p>A relay does not see a privately routed transaction merely because it is a relay in the MEV-Boost flow. Its view covers payloads submitted to that relay. The builder constructs the candidate block and sends it; the validator receives a blinded header first; the relay that handles the submission sees the full payload.</p>
+<p>For example, say you send a transaction through a private endpoint that does not submit it to a particular relay. That relay cannot inspect the transaction from this path alone. If a builder later includes it in a candidate payload and submits that payload to the relay, the relay can then see the transaction and its position in that block. The change in visibility happens when the payload reaches the relay.</p>
+<p>The three roles therefore have different views. The builder assembling a candidate handles its contents and ordering. The relay sees the full payload submitted to it and provides the blinded header and matching payload in the proposal flow. The validator sees bid information and the header before signing, then receives the payload afterward. A blinded block limits what the validator sees before signing; it does not hide the payload from the relay that brokers it.</p>
+<h2>Related</h2>
+<h3>What happens if a MEV-Boost relay goes offline?</h3>
+<p>An offline relay interrupts its part of the proposal path. Before signing, the validator cannot receive a bid or blinded header from that relay; after signing, it cannot retrieve the matching payload from an unreachable relay at that moment. The relay’s outage concerns submissions and proposals using that endpoint, rather than transactions routed privately elsewhere.</p>
+<h3>Can an Ethereum validator connect to multiple relays?</h3>
+<p>Yes, a validator can use multiple relay endpoints. Each relay sees the payloads submitted to it, so connecting to several does not give every relay a view of every private transaction or every builder’s submissions. For a validator comparing bids, the useful privacy question is which relays receive candidate payloads and which transaction routes eventually feed those candidates.</p></div>
+  <aside class="sf223b94">
+    <h2 class="s8079352">More stories</h2>
+    <ul class="sd5197b2">
+<li><a href="/us-secures-seizure-authority-over-1-2b-in-binance-theft/">US secures seizure authority over $1.2B in Binance theft</a></li><li><a href="/flashbots-who-controls-each-step/">Flashbots: Who controls each step?</a></li><li><a href="/teleswap-vs-alternatives-which-bitcoin-route-fits/">TeleSwap vs alternatives: Which Bitcoin route fits?</a></li><li><a href="/doj-gets-authority-to-seize-or-restrain-1-2b-in-binance-crypto/">DOJ gets authority to seize or restrain $1.2B in Binance crypto</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sb1812bb">
+  <div class="sf4f0dbb s839b679">
+    <p class="s188d99f">Hashbeam</p>
+    <ul class="sa7f5db7">
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/how-we-report/">How we report</a></li>    </ul>
+    <p class="s9ce7863">News and analysis for information, not financial advice.</p>
+    <p class="s2ef56c5">© 2026 Hashbeam</p>
+  </div>
+</footer>
+</body>
+</html>
