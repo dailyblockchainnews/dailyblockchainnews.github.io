@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en-GB" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What is a DVN in LayerZero? How message checks work</title>
+<meta name="description" content="What is a DVN in LayerZero? It verifies a source-chain message hash on the destination before an executor delivers it, using app-selected verifier requirements.">
+<link rel="canonical" href="https://dailyblockchainnews.github.io/layerzero-dvns-verify-messages-before-delivery/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1817">
+<meta name="author" content="The Hashbeam Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Hashbeam">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="LayerZero DVNs verify messages before delivery">
+<meta property="og:description" content="What is a DVN in LayerZero? It verifies a source-chain message hash on the destination before an executor delivers it, using app-selected verifier requirements.">
+<meta property="og:url" content="https://dailyblockchainnews.github.io/layerzero-dvns-verify-messages-before-delivery/">
+<meta property="og:image" content="https://dailyblockchainnews.github.io/assets/covers/layerzero-dvns-verify-messages-before-delivery-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="LayerZero DVNs verify messages before delivery"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LayerZero DVNs verify messages before delivery">
+<meta name="twitter:description" content="What is a DVN in LayerZero? It verifies a source-chain message hash on the destination before an executor delivers it, using app-selected verifier requirements.">
+<meta property="article:published_time" content="2026-11-25T05:11:06+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s9b31fc2faf.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Hashbeam" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyblockchainnews.github.io/#website",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Hashbeam reports crypto news: protocol upgrades, network security, exchanges, stablecoins, regulation and market structure across blockchains and tokens."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyblockchainnews.github.io/layerzero-dvns-verify-messages-before-delivery/#webpage",
+      "url": "https://dailyblockchainnews.github.io/layerzero-dvns-verify-messages-before-delivery/",
+      "name": "What is a DVN in LayerZero? How message checks work",
+      "isPartOf": {
+        "@id": "https://dailyblockchainnews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyblockchainnews.github.io/layerzero-dvns-verify-messages-before-delivery/#article",
+      "headline": "LayerZero DVNs verify messages before delivery",
+      "isAccessibleForFree": true,
+      "description": "What is a DVN in LayerZero? It verifies a source-chain message hash on the destination before an executor delivers it, using app-selected verifier requirements.",
+      "datePublished": "2026-11-25T05:11:06+00:00",
+      "dateModified": "2026-11-25T05:11:06+00:00",
+      "url": "https://dailyblockchainnews.github.io/layerzero-dvns-verify-messages-before-delivery/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyblockchainnews.github.io/layerzero-dvns-verify-messages-before-delivery/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "wordCount": 583,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/layerzero-dvns-verify-messages-before-delivery-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/layerzero-dvns-verify-messages-before-delivery-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/layerzero-dvns-verify-messages-before-delivery-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyblockchainnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "LayerZero DVNs verify messages before delivery",
+          "item": "https://dailyblockchainnews.github.io/layerzero-dvns-verify-messages-before-delivery/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailyblockchainnews.github.io/#org",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyblockchainnews.github.io/how-we-report/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1fb3751" href="#main">Skip to main content</a>
+<header class="s21c5601">
+  <div class="sf4f0dbb s6484681">
+    <a class="s0f7e155" href="/">Hashbeam</a>
+    <p class="sd2d39e8">Crypto protocols, markets and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sf4f0dbb s1522634">
+  <header class="s1b91d5f">
+    <p class="sa3e22fc"><time class="s39232be" datetime="2026-11-25T05:11:06+00:00">2026-11-25 05:11 UTC</time><span class="s6100180">e72bf5</span></p>
+    <h1 class="s06f00f2">LayerZero DVNs verify messages before delivery</h1>
+<p class="s32df8ee">What is a DVN in LayerZero? It verifies a source-chain message hash on the destination before an executor delivers it, using app-selected verifier requirements.</p>    <p class="sc82b695"><span>The Hashbeam Desk</span><span class="s9d2a29e">·</span><time datetime="2026-11-25T05:11:06+00:00">Nov 25, 2026 · 05:11 UTC</time><span class="s9d2a29e">·</span><span class="s15340cb">3 min read</span></p>
+  </header>
+  <figure class="sd0e714b"><img width="1200" height="630" fetchpriority="high" class="sb855dc0" src="/assets/covers/layerzero-dvns-verify-messages-before-delivery.jpg" alt="LayerZero DVNs verify messages before delivery"></figure>
+  <div class="s48eadf1"><p>A DVN in LayerZero verifies that a message was sent on the source chain and attests to its payload hash on the destination chain before delivery. The destination chain cannot read Ethereum’s state directly, so independent verifiers check the source event and report their result to its endpoint.</p>
+<h2>What does a DVN verify in a cross-chain transfer?</h2>
+<p>A DVN verifies a message’s payload hash, which represents the message data, rather than delivering that message to the receiving application. In LayerZero V2, the app’s verification settings determine which DVNs must attest and how many optional DVN attestations are enough.</p>
+<p>Take a USDC transfer from Ethereum to Berachain. The source application sends a message on Ethereum, and the DVNs assigned to that route wait for the configured Ethereum confirmations. Once they consider the message sufficiently confirmed, they attest to its hash on Berachain’s LayerZero endpoint.</p>
+<p>The endpoint records those attestations against the message. The hash lets the destination verify that the message presented for delivery matches the one that was sent; the DVN’s role is to confirm and attest, not to carry out the token transfer.</p>
+<h2>How do required and optional DVNs affect verification?</h2>
+<p>Required DVNs must all verify the message, while optional DVNs count toward a threshold set by the application. Delivery can begin only after every required DVN and enough optional DVNs have verified.</p>
+<p>That threshold provides a way to keep verification available when an optional DVN is offline. Say an app requires its designated DVN and sets a threshold across a group of optional DVNs. If one optional verifier stops responding, the message can still become verified when the required DVN and enough of the remaining optional verifiers attest. If a required DVN is unavailable, or too few optional DVNs respond to meet the threshold, verification remains incomplete and delivery cannot begin.</p>
+<p>This is a configuration choice, not an automatic guarantee that every route has the same verifier set. The app chooses the required DVNs and optional threshold for its messages. For a user comparing a LayerZero message route with a <a href="https://cryptoguru.justblogged.com/how-help-friend-move-crypto-onto-berachain-safely" rel="noopener">Berachain bridge</a>, the useful question is which verification design the route uses: the bridge moves assets across chains, while LayerZero’s DVNs attest to a cross-chain message before it can be delivered.</p>
+<h2>What happens after the DVNs verify the message?</h2>
+<p>After verification, a separate executor submits the destination delivery transaction and pays its gas. The DVN attests to the message hash; the executor calls the destination endpoint to deliver the verified message to the receiving application.</p>
+<p>In the USDC case, the sequence is source message on Ethereum, confirmation and hash attestation by DVNs on Berachain, then delivery by the executor. The destination application can act on the message only after the verification conditions are met and the delivery transaction is submitted. That distinction matters: a verified message is eligible for delivery, but verification and execution are separate steps.</p>
+<h2>How did DVNs change LayerZero’s verification model?</h2>
+<p>LayerZero V2 introduced DVNs, replacing V1’s oracle-and-relayer model with configurable verifier networks and a separate executor role. In V2, the app’s verification configuration sets the conditions for attestation, while execution remains a distinct transaction.</p>
+<p>In practical terms, a user tracking a Berachain bridge transfer can follow two milestones: the message becomes verified after the DVN requirements are met, then the executor delivers it on the destination chain. A delay before verification points to confirmations or missing attestations; a delay after verification is in the delivery step. The DVN confirms the message, and the executor delivers it.</p></div>
+  <aside class="sf223b94">
+    <h2 class="s8079352">More stories</h2>
+    <ul class="sd5197b2">
+<li><a href="/us-seeks-forfeiture-of-1-1b-in-binance-hack-usdc/">US Seeks Forfeiture of $1.1B in Binance-Hack USDC</a></li><li><a href="/weekly-dapp-approvals-cap-them-then-review/">Weekly dapp approvals: cap them, then review</a></li><li><a href="/eu-proposal-targets-crypto-networks-in-22nd-russia-sanctions-package/">EU proposal targets crypto networks in 22nd Russia sanctions package</a></li><li><a href="/berachain-bridge-only-from-ethereum-routes-for-beginners/">Berachain bridge only from Ethereum? Routes for beginners</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sb1812bb">
+  <div class="sf4f0dbb s839b679">
+    <p class="s188d99f">Hashbeam</p>
+    <ul class="sa7f5db7">
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/how-we-report/">How we report</a></li>    </ul>
+    <p class="s9ce7863">News and analysis for information, not financial advice.</p>
+    <p class="s2ef56c5">© 2026 Hashbeam</p>
+  </div>
+</footer>
+</body>
+</html>
