@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en-GB" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Does a Flashbots Relay Work? Private Swap Path</title>
+<meta name="description" content="How does a Flashbots relay work? A signed swap travels from a private wallet endpoint through configured hints to builders, but inclusion waits for a proposed block.">
+<link rel="canonical" href="https://dailyblockchainnews.github.io/how-does-a-flashbots-relay-work-follow-a-wallet-swap/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#1a1817">
+<meta name="author" content="The Hashbeam Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Hashbeam">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="How Does a Flashbots Relay Work? Follow a Wallet Swap">
+<meta property="og:description" content="How does a Flashbots relay work? A signed swap travels from a private wallet endpoint through configured hints to builders, but inclusion waits for a proposed block.">
+<meta property="og:url" content="https://dailyblockchainnews.github.io/how-does-a-flashbots-relay-work-follow-a-wallet-swap/">
+<meta property="og:image" content="https://dailyblockchainnews.github.io/assets/covers/how-does-a-flashbots-relay-work-follow-a-wallet-swap-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How Does a Flashbots Relay Work? Follow a Wallet Swap"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Does a Flashbots Relay Work? Follow a Wallet Swap">
+<meta name="twitter:description" content="How does a Flashbots relay work? A signed swap travels from a private wallet endpoint through configured hints to builders, but inclusion waits for a proposed block.">
+<meta property="article:published_time" content="2026-11-25T09:19:11+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Inter:wght@400;500;600;700&amp;family=Martian+Mono:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s9b31fc2faf.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Hashbeam" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://dailyblockchainnews.github.io/#website",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "inLanguage": "en-GB",
+      "description": "Hashbeam reports crypto news: protocol upgrades, network security, exchanges, stablecoins, regulation and market structure across blockchains and tokens."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dailyblockchainnews.github.io/how-does-a-flashbots-relay-work-follow-a-wallet-swap/#webpage",
+      "url": "https://dailyblockchainnews.github.io/how-does-a-flashbots-relay-work-follow-a-wallet-swap/",
+      "name": "How Does a Flashbots Relay Work? Private Swap Path",
+      "isPartOf": {
+        "@id": "https://dailyblockchainnews.github.io/#website"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailyblockchainnews.github.io/how-does-a-flashbots-relay-work-follow-a-wallet-swap/#article",
+      "headline": "How Does a Flashbots Relay Work? Follow a Wallet Swap",
+      "isAccessibleForFree": true,
+      "description": "How does a Flashbots relay work? A signed swap travels from a private wallet endpoint through configured hints to builders, but inclusion waits for a proposed block.",
+      "datePublished": "2026-11-25T09:19:11+00:00",
+      "dateModified": "2026-11-25T09:19:11+00:00",
+      "url": "https://dailyblockchainnews.github.io/how-does-a-flashbots-relay-work-follow-a-wallet-swap/",
+      "mainEntityOfPage": {
+        "@id": "https://dailyblockchainnews.github.io/how-does-a-flashbots-relay-work-follow-a-wallet-swap/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailyblockchainnews.github.io/#org"
+      },
+      "wordCount": 645,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/how-does-a-flashbots-relay-work-follow-a-wallet-swap-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/how-does-a-flashbots-relay-work-follow-a-wallet-swap-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailyblockchainnews.github.io/assets/covers/how-does-a-flashbots-relay-work-follow-a-wallet-swap-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailyblockchainnews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How Does a Flashbots Relay Work? Follow a Wallet Swap",
+          "item": "https://dailyblockchainnews.github.io/how-does-a-flashbots-relay-work-follow-a-wallet-swap/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailyblockchainnews.github.io/#org",
+      "name": "Hashbeam",
+      "url": "https://dailyblockchainnews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailyblockchainnews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailyblockchainnews.github.io/how-we-report/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s1fb3751" href="#main">Skip to main content</a>
+<header class="s21c5601">
+  <div class="sf4f0dbb s6484681">
+    <a class="s0f7e155" href="/">Hashbeam</a>
+    <p class="sd2d39e8">Crypto protocols, markets and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sf4f0dbb s1522634">
+  <header class="s1b91d5f">
+    <p class="sa3e22fc"><time class="s39232be" datetime="2026-11-25T09:19:11+00:00">2026-11-25 09:19 UTC</time><span class="s6100180">200ceb</span></p>
+    <h1 class="s06f00f2">How Does a Flashbots Relay Work? Follow a Wallet Swap</h1>
+<p class="s32df8ee">How does a Flashbots relay work? A signed swap travels from a private wallet endpoint through configured hints to builders, but inclusion waits for a proposed block.</p>    <p class="sc82b695"><span>The Hashbeam Desk</span><span class="s9d2a29e">·</span><time datetime="2026-11-25T09:19:11+00:00">Nov 25, 2026 · 09:19 UTC</time><span class="s9d2a29e">·</span><span class="s15340cb">4 min read</span></p>
+  </header>
+  <figure class="sd0e714b"><img width="1200" height="630" fetchpriority="high" class="sb855dc0" src="/assets/covers/how-does-a-flashbots-relay-work-follow-a-wallet-swap.jpg" alt="How Does a Flashbots Relay Work? Follow a Wallet Swap"></figure>
+  <div class="s48eadf1"><p>A wallet swap sent privately through Flashbots Protect travels from the wallet’s signed transaction to a private endpoint, through configured MEV-Share handling, and on to permitted builders. This route keeps the transaction out of Ethereum’s public mempool while builders assess it for inclusion.</p>
+<p>The path has separate stages: submission, optional sharing of transaction hints, block construction, and proposal. That split is a useful way to think about <a href="https://dailyblockchainnews.github.io/flashbots-who-controls-each-step/">Flashbots’ trust model by layer</a>. Flashbots Protect handles private submission, while a MEV-Boost relay handles builder bids later.</p>
+<h2>Where does a wallet swap go after private submission?</h2>
+<p>A wallet sends its signed swap to the Protect RPC endpoint, which forwards it into the MEV-Share flow. A signed transaction contains the authorization needed to execute the swap; sending it to this endpoint submits it privately instead of broadcasting it through the public mempool.</p>
+<p>For instance, say you set your wallet to use Protect and sign a token swap. The wallet sends the signed transaction to the configured RPC. Advanced users can submit a single transaction with <strong>eth_sendPrivateTransaction</strong>. In either case, the endpoint is the entry point; the wallet does not send the swap straight to a validator.</p>
+<p>The private transaction reaches the MEV-Share Node, where your configured privacy preferences determine which hints searchers can see. A hint is selected information about the transaction, rather than a public-mempool broadcast of the signed transaction. Your settings determine how much information becomes available for searchers to act on.</p>
+<p>That creates two different paths for the same swap. With hints enabled, searchers can use the permitted information to look for a profitable backrun and submit a bundle. With fewer hints, they have less information to work from. The difference is the hint setting: it changes what searchers can use, while the private submission route remains the same.</p>
+<h2>How do builders and MEV-Boost relays affect inclusion?</h2>
+<p>Builders assess eligible private transactions and searcher bundles as they construct candidate blocks. A searcher’s backrun bundle may be submitted to builders alongside the user’s transaction, but the builder decides what goes into its candidate block. The submission itself is not a promise of a particular placement or result.</p>
+<p>Once builders have candidate blocks, MEV-Boost connects builders with validators through relays. A MEV-Boost relay receives builder bids, checks them, and makes a selected block available to a validator. The validator then proposes a block to Ethereum. This relay works at the builder-to-validator stage; it is distinct from the private endpoint that first received your swap.</p>
+<p>The phrase “Flashbots relay” can refer loosely to the private route a user uses to submit a transaction, or specifically to a relay in the MEV-Boost block-delivery process. The first route carries a user’s transaction toward builders. The second handles builder bids and block delivery for a validator. Keeping those jobs separate makes the transaction’s path easier to follow.</p>
+<p>A transaction hash returned after submission is an acknowledgement that the transaction was accepted for submission. It is not the same as an on-chain confirmation. Inclusion depends on a builder placing the transaction in a candidate block and a validator proposing that block. Once mined, the transaction is public on Ethereum.</p>
+<h2>Related</h2>
+<h3>What is a Flashbots private transaction?</h3>
+<p>A signed transaction sent through a private endpoint rather than the public mempool. The endpoint routes it into the configured flow, where permitted hints may be shared with searchers before builders assess it for a block.</p>
+<h3>Does a Flashbots relay guarantee inclusion?</h3>
+<p>No. A builder must include the transaction in a candidate block, and a validator must propose that block. A submission acknowledgement marks the start of the route; confirmation comes when the transaction is included on-chain.</p>
+<p>For a wallet swap, private submission determines where the signed transaction first goes, while builder selection and block proposal determine whether it reaches Ethereum. The key distinction is between sending the transaction and seeing it confirmed on-chain.</p></div>
+  <aside class="sf223b94">
+    <h2 class="s8079352">More stories</h2>
+    <ul class="sd5197b2">
+<li><a href="/layerzero-dvns-verify-messages-before-delivery/">LayerZero DVNs verify messages before delivery</a></li><li><a href="/us-seeks-forfeiture-of-1-1b-in-binance-hack-usdc/">US Seeks Forfeiture of $1.1B in Binance-Hack USDC</a></li><li><a href="/weekly-dapp-approvals-cap-them-then-review/">Weekly dapp approvals: cap them, then review</a></li><li><a href="/eu-proposal-targets-crypto-networks-in-22nd-russia-sanctions-package/">EU proposal targets crypto networks in 22nd Russia sanctions package</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sb1812bb">
+  <div class="sf4f0dbb s839b679">
+    <p class="s188d99f">Hashbeam</p>
+    <ul class="sa7f5db7">
+<li><a href="/">Front page</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/how-we-report/">How we report</a></li>    </ul>
+    <p class="s9ce7863">News and analysis for information, not financial advice.</p>
+    <p class="s2ef56c5">© 2026 Hashbeam</p>
+  </div>
+</footer>
+</body>
+</html>
